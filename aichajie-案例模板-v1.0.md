@@ -169,4 +169,4 @@
 
 ---
 
-*填写完成后，提交至 04-case-library/ 并更新 case-index.md*
+*填写完成后，存入 cases/2026/，命名 CASE-XXX-产品名.md*
