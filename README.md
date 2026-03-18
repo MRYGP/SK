@@ -1,8 +1,7 @@
 # SK知识库 · 三湘问道
 
-> 最后更新：2026-03-16
+> 最后更新：2026-03-18
 > 维护者：changshayang
-> 用途：三湘问道AI应用拆解工作室的核心知识库，包含拆解框架、理论基础、案例库、推演SOP、产品设计方法论
 
 ---
 
@@ -10,74 +9,59 @@
 
 ```
 E:\sk\
-├── README.md                          ← 你现在看的这个文件（仓库总目录）
+├── README.md                          ← 本文件
 │
-├── 【Skill文件（核心方法论）】
-│   ├── SKILL-推演SOP-v1.2.md          ← 九步推演法+灵感激发+三个纪律+北极星（回答"做不做"）
-│   ├── SKILL-产品设计方法论-v1.0.md    ← 十步产品设计法（回答"决定做了，怎么做"）
+├── 【核心方法论（Skill）】
+│   ├── SKILL-推演SOP-v1.2.md          ← 九步推演法（"做不做"）
+│   ├── SKILL-产品设计方法论-v1.0.md    ← 十步产品设计法（"怎么做"）
 │   └── product-teardown-template-v3.0.md ← AI产品拆解10维度模板
 │
-│   ⚠️ 旧版本：SKILL-推演SOP-v1.1.md（已被v1.2替代，保留作参考）
-│
-├── 【理论文件（DOC-系列）】
-│   ├── DOC-D021-维度跨越.md
-│   ├── DOC-P001-财富公式.md
-│   ├── DOC-P002-AlphaFold推演公式.md
-│   ├── DOC-S003-初创企业生存法则.md
-│   ├── DOC-S032-破坏式创新.md
-│   ├── DOC-S037-从0到1.md
-│   ├── DOC-S047-三大标杆方法论.md
-│   ├── DOC-S061-网络效应与学习效应.md
-│   ├── DOC-S065-深度用户护城河.md
-│   └── DOC-S074-换题思维.md
+├── 【理论文件（DOC-系列）】10篇
+│   ├── DOC-D021-维度跨越.md / DOC-P001-财富公式.md
+│   ├── DOC-P002-AlphaFold推演公式.md / DOC-S003-初创企业生存法则.md
+│   ├── DOC-S032-破坏式创新.md / DOC-S037-从0到1.md
+│   ├── DOC-S047-三大标杆方法论.md / DOC-S061-网络效应与学习效应.md
+│   └── DOC-S065-深度用户护城河.md / DOC-S074-换题思维.md
 │
 ├── 【输出模板】
-│   ├── article_template.md             ← 公众号文章模板
-│   ├── aichajie-案例模板-v1.0.md       ← 案例六维存储格式
-│   ├── agent3a_article.md              ← 讲稿/音频输出模板
-│   └── 案例拆解输出标准.md
+│   ├── article_template.md / aichajie-案例模板-v1.0.md
+│   ├── agent3a_article.md / 案例拆解输出标准.md
+│   └── 公众号写作指南.md（v2.2）
 │
 ├── 【运营规则】
-│   ├── 北极星文档.md                   ← 三湘问道的方向和愿景
-│   ├── 三湘问道铁律.md                 ← 排除判断/战场选择规则
-│   ├── 公众号写作指南.md               ← 内容规范
-│   ├── 评估引擎速查版.md               ← 项目评估7+3步流程
-│   ├── 理论库优先级清单.md             ← 理论补库评估
-│   ├── evidence_levels.yml             ← 证据等级标注标准
-│   └── failure_modes.yml               ← 失败模式库
+│   ├── 北极星文档.md / 三湘问道铁律.md / 评估引擎速查版.md
+│   ├── 理论库优先级清单.md / evidence_levels.yml / failure_modes.yml
+│   └── （系统指令在 E:\SK外部文档\系统指令-最终版-v1.3.md）
 │
-├── 【原始素材】
-│   └── 3.16日KIMI讨论.md              ← 与KIMI的原始对话记录
-│
-├── cases/
-│   └── 2026/
-│       ├── case-index.md               ← 案例库索引（总目录）
-│       │
-│       ├── 【已发布内容】
-│       │   ├── 001-给股东的第一封信.md
-│       │   ├── 002-财富公式.md
-│       │   └── 003-推演公式.md
-│       │
-│       ├── 【推演实战·老年AI管家项目】
-│       │   ├── north-star-elderly-ai.md              ← 北极星文档
-│       │   ├── ai-elderly-product-discussion-log.md   ← Claude推演流水账（29章）
-│       │   ├── kimi-discussion-log.md                 ← KIMI讨论流水账（9章）
-│       │   ├── research-report-elderly-growth.md      ← 老年产品增长研究报告
-│       │   ├── product-design-draft-v0.2.md           ← 产品设计文档v0.2
-│       │   └── tech-eval-checklist-digital-human.md   ← 技术评估清单+迭代路线图
-│       │
-│       ├── 【研究报告】
-│       │   └── research-wechat-visibility.md          ← 公众号"被看见"最大化研究
-│       │
-│       ├── 【拆解案例】
-│       │   ├── CASE-REF-Lovable.md
-│       │   └── lovable-拆解文章-v2.md
-│       │
-│       ├── 拆解顺序表.md
-│       └── 诊断问题库.md
+├── cases/2026/                        ← 所有案例和项目文件
+│   ├── case-index.md                  ← 案例库总索引
+│   │
+│   ├── 【公众号文章】
+│   │   ├── 001-所有人都在做照顾老人的AI产品.md  ← 新001（拆解开场）
+│   │   ├── 002-财富公式.md / 003-推演公式.md
+│   │   ├── 50岁，和AI深聊三年后，我决定重新出发.md ← 备用（原001自我介绍）
+│   │   └── 001-launch-plan.md         ← 发布执行方案
+│   │
+│   ├── 【老年AI管家项目】
+│   │   ├── north-star-elderly-ai.md   ← 北极星
+│   │   ├── product-design-draft-v0.2.md ← 产品设计v0.2.1（含五条准则）
+│   │   ├── ai-elderly-product-discussion-log.md ← Claude推演29章
+│   │   ├── kimi-discussion-log.md     ← KIMI讨论9章
+│   │   ├── research-report-elderly-growth.md ← 5个亿级老年产品研究
+│   │   └── tech-eval-checklist-digital-human.md ← 数字人技术评估
+│   │
+│   ├── 【研究报告】
+│   │   ├── research-wechat-visibility.md ← 公众号冷启动研究
+│   │   └── deep-research-distribution-strategy.md ← 多平台分发研究
+│   │
+│   └── 拆解顺序表.md / 诊断问题库.md / CASE-REF-Lovable.md
 │
 └── meta/
-    └── changelog.md                    ← 更新日志
+    ├── changelog.md                   ← 更新日志
+    ├── gpts-first-reader-design.md    ← GPTs读者模拟器设计方案
+    ├── gpt-deep-research-prompt.md    ← 分发策略深度研究指令
+    ├── gpt-deep-research-elderly-scenarios.md ← 场景验证深度研究指令
+    └── deep-research-elderly-scenarios.md ← 场景验证深度研究结果
 ```
 
 ---
@@ -85,51 +69,31 @@ E:\sk\
 ## 两个核心Skill的关系
 
 ```
-推演SOP（v1.2）                     产品设计方法论（v1.0）
-"值不值得做？"                      "决定做了，怎么做？"
-     |                                      |
- 九步推演                              十步设计
-     |                                      |
- 结论："做" → 确立北极星 → 进入产品设计方法论
- 结论："不做" → 存档
+推演SOP v1.2 → "做不做？" → 结论："做" → 确立北极星
+                                              ↓
+                          产品设计方法论 v1.0 → "怎么做？"
 ```
 
-## 关键文件速查
+## 老年AI管家项目的五条产品准则
 
-### 做推演时
-- `SKILL-推演SOP-v1.2.md` → 九步推演法（含灵感激发、三个纪律、北极星确立）
-- `failure_modes.yml` → 失败模式库
-- `评估引擎速查版.md` → 项目评估流程
+1. **零学习** — 用户不需要学。需要"教"的功能，重新设计或不做
+2. **习惯>功能** — 养成每天来的习惯，不是做一次性工具
+3. **用户自己来** — 不硬拉人，产品好到用户忍不住告诉朋友
+4. **功能养出来** — 看数据不看自以为是的设计
+5. **在用户已有的地方** — 微信/WhatsApp/LINE，不做独立App
 
-### 做产品设计时
-- `SKILL-产品设计方法论-v1.0.md` → 十步产品设计法
-- 对应项目的北极星文档 → 决策过滤器
+## 发布序列
 
-### 做拆解时
-- `product-teardown-template-v3.0.md` → 10维度拆解框架
-- `aichajie-案例模板-v1.0.md` → 案例存储格式
-- `公众号写作指南.md` → 写作规范
+```
+001 老年AI拆解（立判断）→ 002 财富公式 → 003 推演公式 → 004+ 更多拆解
+```
 
-### 找理论时
-- `DOC-S032-破坏式创新.md` / `DOC-S037-从0到1.md` / `DOC-D021-维度跨越.md` 等
-- 更完整的理论库在 `E:\sanxiangwendao`（92篇）
-
-### 当前进行中的项目
-- **老年AI管家**：产品设计v0.2已完成，技术评估待做，MVP待验证 → 见 `cases/2026/`
-- **公众号冷启动**：研究报告已完成，等注册完毕即可执行
-
----
+设计逻辑：用判断力开场，不用自我介绍开场。
 
 ## 与其他仓库的关系
 
 | 仓库 | 路径 | 角色 |
 |------|------|------|
-| SK知识库（本仓库） | `E:\sk` | 操作系统——怎么做 |
-| 三湘问道理论库 | `E:\sanxiangwendao` | 弹药库——用什么理论武器（92篇） |
-| SK外部文档 | `E:\SK外部文档` | 系统指令、PPT等外部输出文件 |
-
-## 系统指令
-
-当前最新版本：`E:\SK外部文档\系统指令-最终版-v1.3.md`
-
-⚠️ 系统指令中的推演SOP引用需从v1.1更新为v1.2。
+| SK知识库 | E:\sk | 操作系统 |
+| 三湘问道理论库 | E:\sanxiangwendao | 弹药库（92篇） |
+| SK外部文档 | E:\SK外部文档 | 系统指令等 |
