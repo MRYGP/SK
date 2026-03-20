@@ -49,8 +49,8 @@ E:\sk\
 │   └── 实习生B-第一周入职须知.md     产品开发岗位说明
 │
 ├── meta/                        ← 系统 + 工具（8个文件）
-│   ├── 系统指令-v1.3.md            Claude Project的系统指令
-│   ├── 系统指令补丁-深度研究触发.md  补丁：什么时候提醒调研究员
+│   ├── 系统指令-v1.3.md            思考Project的系统指令
+│   ├── 写作工坊-系统指令-v1.0.md    写作Project的系统指令
 │   ├── gpts-first-reader-design.md  GPTs第一读者设计方案
 │   ├── gpts-deep-researcher-design.md GPTs深度研究员设计方案
 │   ├── gpt-deep-research-prompt.md  分发策略深度研究指令（定制版）
@@ -99,15 +99,28 @@ E:\sk\
 
 ## 工具索引
 
+### Claude Projects（两个，分工明确）
+
+| Project | 系统指令 | 知识库 | 职责 |
+|---------|---------|--------|------|
+| **思考Project**（本仓库主体） | `meta/系统指令-v1.3.md` | 整个SK仓库 | 拆解、推演、判断、评估、知识库管理 → 输出**底稿** |
+| **写作Project** | `meta/写作工坊-系统指令-v1.0.md` | ① `content/公众号写作指南.md` ② `content/公众号内容生产经验手册.md` ③ `content/公众号内容大纲-30篇规划.md` ④ 读者反馈（累积） | 把底稿变成让陌生人停下来的文章 → 输出**可发布文章** |
+
+> **为什么分两个**：思考的本能是"加"（更完整、更严谨），写作的本能是"砍"（只留那一刀）。放在一个Project里会互相打架。
+
+```
+工作流：
+思考Project（拆解/推演）→ 底稿 → 写作Project（找那一刀/砍/控节奏）→ 文章 → GPTs第一读者（测试）→ 修改 → 发布
+```
+
+### GPTs工具（ChatGPT侧）
+
 | 工具 | 设计文件 | 知识库文件 | 用途 |
 |------|---------|------------|------|
-| **GPTs第一读者** | `meta/gpts-first-reader-design.md` | ① `content/公众号写作指南.md` ② `北极星文档.md` ③ `cases/2026/research-wechat-visibility.md` | 文章发布前的读者模拟压力测试 |
-| **GPTs深度研究员** | `meta/gpts-deep-researcher-design.md` | ① `core/product-teardown-template-v3.0.md` ② `core/failure_modes.yml` ③ `core/evidence_levels.yml` ④ `content/公众号写作指南.md` | 拆解/写作/赛道判断中的数据收集和假设验证 |
-| GPT深度研究-分发策略 | `meta/gpt-deep-research-prompt.md` | — | 定制版研究指令 |
-| GPT深度研究-场景验证 | `meta/gpt-deep-research-elderly-scenarios.md` | — | 定制版研究指令 |
-
-> **GPTs第一读者**：ChatGPT中创建GPTs，粘贴设计文件中的系统提示词，上传3个知识库文件。发布前把文章丢给它。
-> **GPTs深度研究员**：ChatGPT中创建GPTs，粘贴设计文件中的系统提示词，上传4个知识库文件。5种输入模式详见设计文档。
+| **GPTs第一读者** | `meta/gpts-first-reader-design.md` | ① `content/公众号写作指南.md` ② `北极星文档.md` ③ `cases/2026/research-wechat-visibility.md` | 文章发布前的读者模拟测试 |
+| **GPTs深度研究员** | `meta/gpts-deep-researcher-design.md` | ① `core/研究员输出模板.md` ② `core/failure_modes.yml` ③ `core/evidence_levels.yml` ④ `content/公众号写作指南.md` | 数据收集和假设验证 |
+| GPT深度研究-分发策略 | `meta/gpt-deep-research-prompt.md` | — | 定制版 |
+| GPT深度研究-场景验证 | `meta/gpt-deep-research-elderly-scenarios.md` | — | 定制版 |
 
 ---
 
@@ -136,13 +149,17 @@ E:\sk\
 
 ---
 
-## 与其他仓库的关系
+## 与其他仓库/工具的关系
 
-| 仓库 | 路径 | 角色 |
-|------|------|------|
+| 名称 | 位置/平台 | 角色 |
+|------|----------|------|
 | **SK知识库** | E:\sk | 操作系统（本仓库） |
 | **三湘问道理论库** | E:\sanxiangwendao | 弹药库（92篇理论文档） |
-| **宝山方舟科技** | E:\宝山方舟科技 | 支线项目（参谋角色，流水账+行动清单） |
+| **宝山方舟科技** | E:\宝山方舟科技 | 支线项目（参谋角色） |
+| **思考Project** | Claude Project | 大脑（拆解/推演/判断） |
+| **写作Project** | Claude Project | 写手（底稿→文章） |
+| **GPTs第一读者** | ChatGPT GPTs | 测试员（模拟陌生读者） |
+| **GPTs深度研究员** | ChatGPT GPTs | 研究员（数据/竞品/验证） |
 
 ---
 
@@ -164,7 +181,7 @@ E:\sk\
 
 ## 维护规则
 
-- 系统指令修改时，同步更新 `meta/系统指令-v1.3.md`（版本号递增）
+- 系统指令修改时，同步更新 `meta/` 里对应文件（版本号递增）
 - 理论文件新增时，同步更新 `meta/理论库优先级清单.md`
 - 每5个案例更新 `cases/2026/case-index.md`
 - 每写完5篇文章回顾 `content/公众号内容生产经验手册.md`
