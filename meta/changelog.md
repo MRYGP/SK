@@ -2,6 +2,34 @@
 
 ---
 
+## 第六次更新 · 2026-03-22 · 七份红队报告交叉修正
+
+**触发事件：** 收到4份新红队报告（DeepSeek/Grok/Perplexity/千问），与之前3份（Claude/Gemini/GPT）合并做七份总交叉比对。
+
+**DOC-D022 v2.0 → v2.1：**
+- 理论溯源新增Gary Hamel（Strategy as Revolution, 1996-1998）和JTBD（Christensen/Ulwick）
+- 飞轮条件②从"体验随规模改善"改为"核心价值随规模强化"（WeWork反例驱动）
+- 不适用场景新增"资源垄断型（LVMH）"和"刻意小而美型（Basecamp）"
+- 已知局限新增"飞轮可以反转"（Friendster/WeWork案例）
+- 已知局限修正"R1和R2是独立维度，不是因果关系"（A/B/C三型）
+- 版本号升级到v2.1，修正依据更新为7份报告
+
+**RRF案例验证库：**
+- 新增15个案例（来自DeepSeek/Grok/Perplexity/千问报告），总计34个
+- 案例覆盖度从19个提升到34个，适用范围内解释力约70%
+
+**新增文件：**
+- cases/2026/深度研究报告/RRF七份报告总交叉比对.md
+- cases/2026/深度研究报告/RRF框架红队评估报告DEEPSEEK.md
+- cases/2026/深度研究报告/RRF框架红队评估报告GROK.md
+- cases/2026/深度研究报告/RRF框架红队评估报告perplexity.md
+- cases/2026/深度研究报告/RRF框架红队评估报告千问.md
+
+**product-teardown-template-v4.0.md：**
+- 飞轮条件②措辞同步更新为"核心价值随规模强化"
+
+---
+
 ## 2026-03-22（第五次大更新·分析操作系统重构）
 
 ### 重构背景
