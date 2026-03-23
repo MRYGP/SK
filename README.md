@@ -48,7 +48,7 @@ E:\sk\
 - 推演公式（DOC-P002）—— 历史数据×约束条件×迭代深度
 - 失败模式库（FM001-FM015）—— 15种死法识别
 
-详见：`theory/DOC-D022-重新定义问题与飞轮构建.md`（v2.0）
+详见：`theory/DOC-D022-重新定义问题与飞轮构建.md`（v2.1）
 
 ---
 
@@ -135,7 +135,7 @@ evidence_levels.yml               A/B/C/X证据等级
 
 ### theory/（11个文件）
 ```
-DOC-D022-重新定义问题与飞轮构建.md  ★ RRF判断链（v2.0，核心理论）
+DOC-D022-重新定义问题与飞轮构建.md  ★ RRF判断链（v2.1，七份红队报告修正）
 DOC-D021-维度跨越.md               四个竞争维度
 DOC-P001-财富公式.md               被看见×被信任×被留住
 DOC-P002-AlphaFold推演公式.md       历史数据×约束条件×迭代深度
@@ -187,7 +187,7 @@ changelog.md                       更新日志
 002-财富公式.md                         待润色
 003-推演公式.md                         待润色
 001-launch-plan.md                      冷启动方案
-RRF案例验证库.md                        ★ 19个案例的RRF分析
+RRF案例验证库.md                        ★ 34个案例的RRF分析（v2.1）
 case-index.md                           案例库索引
 拆解顺序表.md                           6个待拆案例
 诊断问题库.md                           场景F积累
@@ -197,10 +197,15 @@ case-index.md                           案例库索引
   RRF框架评估报告CLAUDE.md              红队报告
   RRF框架深度评估报告GEMINI.md          红队报告
   RRF深度研究GPT.md                     红队报告
-  RRF修正清单-三报告交叉比对.md          修正清单
+  RRF框架红队评估报告DEEPSEEK.md        红队报告
+  RRF框架红队评估报告GROK.md            红队报告
+  RRF框架红队评估报告perplexity.md      红队报告
+  RRF框架红队评估报告千问.md          红队报告
+  RRF修正清单-三报告交叉比对.md          修正清单（v2.0阶段历史记录）
+  RRF七份报告总交叉比对.md              ★ 七份报告现行结论（以此为准）
 ```
 
-### _archive/（归档文件）
+### _archive/（根目录归档）
 ```
 README.md                                    存档说明
 系统指令补丁-深度研究触发-已合并.md            旧补丁
@@ -208,4 +213,15 @@ product-teardown-template-v3.0.md             被v4.0替代
 本周执行清单-1人版-已替代.md                   被2人版替代
 gpt-deep-research-prompt-已用过.md             旧研究指令
 gpt-deep-research-elderly-scenarios-已用过.md   旧研究指令
+仓库审计修复清单-2026-03-23-已执行.md  审计记录
+```
+
+### cases/2026/_archive/（案例归档）
+```
+001-所有人都在做照顾老人的AI产品-v1旧版.md   被v2替代
+002-所有人都在做照顾老人的AI产品-旧版.md     旧编号
+003-财富公式-旧版.md                           旧编号
+004-推演公式-旧版.md                           旧编号
+ai-elderly-product-discussion-log.md          讨论流水账
+kimi-discussion-log.md                        讨论流水账
 ```
