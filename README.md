@@ -1,6 +1,6 @@
 # SK知识库 · 三湘问道
 
-> 最后更新：2026-03-26
+> 最后更新：2026-04-01
 > 维护者：changshayang
 > 路径：D:\sk
 
@@ -17,8 +17,8 @@ D:\sk\
 ├── core/                        ← 核心方法论 + 规则（8个文件）
 ├── theory/                      ← 理论文件（11个文件）
 ├── content/                     ← 内容生产（10个文件）
-├── ops/                         ← 团队运营（6个文件）
-├── meta/                        ← 系统指令 + 工具设计（8个文件）
+├── ops/                         ← 团队运营（5个文件）
+├── meta/                        ← 系统指令 + 工具设计（9个文件）
 ├── cases/2026/                  ← 案例 + 项目 + 研究报告
 └── _archive/                    ← 已归档旧版文件
 ```
@@ -33,6 +33,7 @@ D:\sk\
 | **写作工坊** | GPTs | `meta/写作工坊-系统指令-v1.2.md`（含作者原声保护铁律） |
 | **第一读者** | GPTs | `meta/gpts-first-reader-design.md`（v1.3·联网验证+传播力测试+长度测试+公众号校准） |
 | **深度研究员** | 多AI轮换（首选Perplexity） | `meta/gpts-deep-researcher-design.md`（v1.1） |
+| **产品雷达扫描** | Google AI Studio | `ops/产品雷达-AI-Studio扫描指令.md`(v1.2·3套Prompt+URL速查+中文平台处理) |
 
 日常工作流：思考Project出底稿 → 写作工坊改写 → 第一读者检测 → 发布
 
@@ -49,7 +50,8 @@ D:\sk\
 | **找理论** | `theory/` 目录下所有DOC文件 |
 | **做排除判断** | `core/三湘问道铁律` |
 | **推演新方向** | `core/SKILL-推演SOP-v1.3` `core/failure_modes` |
-| **发现新AI产品** | `cases/2026/product-radar` `cases/2026/信号源清单` |
+| **发现新AI产品/补充产品库** | `product-radar`(产品库)`信号源清单`(三梯队信号源)`产品雷达-AI-Studio扫描指令`(Google AI Studio扫描指令)`产品雷达-深度扫描指令`(一次性信号源建设指令) |
+| **产品设计完成需要压测/红队攻击** | `SK框架红队法`（meta/SK知识库使用方法-框架红队法.md） |
 | **案例找规律** | `cases/2026/case-cards` `content/case-card-format-v1.0` |
 | **变现/角色定位** | `cases/2026/角色定位与变现路径` |
 | **安排实习生** | `ops/实习生A-完整工作手册`（唯一文档，含流水线+雷达+冷启动） |
@@ -63,6 +65,8 @@ D:\sk\
 001 ✅ 已发布（v6）
 002 待走流水线（底稿在cases/2026/002-财富公式.md）
 003 待走流水线（底稿在cases/2026/003-推演公式.md）
+004 ✅ 已完成（cases/2026/004-Gamma-50个人怎么做出21亿美金终稿.md）
+005 ✅ 已完成（cases/2026/005Lovable拆解-终稿.md）
 ```
 
 ---
@@ -110,22 +114,22 @@ agent3a_article.md                 讲稿改写prompt
 文章发布SOP.md                     发布流程
 ```
 
-### ops/（6个文件）
+### ops/（5个文件）
 ```
 实习生A-完整工作手册.md            ★ 唯一文档：流水线+雷达+冷启动+提交模板+审核节点
 执行状态总表.md                    ★ 全局进度（每次开对话先看）
-产品雷达-执行方案.md               每天15分钟扫描流程
-产品雷达-深度扫描指令.md            4套信号源指令+3套AI扫描指令
+产品雷达-AI-Studio扫描指令.md    ★ Google AI Studio扫描Prompt×3 + 手动SOP + URL速查表(v1.2)
 三人工作方案.md                    杨+A+B总方案
 实习生B-第一周入职须知.md           产品开发（暂放）
 ```
 
-### meta/（8个文件）
+### meta/（9个文件）
 ```
 系统指令-v1.3.md                   ★ 思考Project指令（含零号动作+经验手册搜索）
 写作工坊-系统指令-v1.2.md          ★ 写作GPTs指令（含作者原声保护铁律）
 gpts-first-reader-design.md        ★ 第一读者v1.3（联网验证+传播力测试+长度测试+公众号校准）
 gpts-deep-researcher-design.md     深度研究员v1.1
+SK知识库使用方法-框架红队法.md     ★ 用自有框架红队攻击产品的方法论（含实战记录）
 RRF理论发展路径.md                 理论发展6阶段
 RRF理论评估指令.md                 红队攻击指令
 理论库优先级清单.md                理论补充排序
@@ -142,16 +146,23 @@ changelog.md                       更新日志
 
 product-radar.md                        ★ AI产品雷达·产品库
 信号源清单.md                           ★ 三梯队+垂直方向信号源
+产品雷达-AI-Studio扫描指令.md           Google AI Studio扫描指令副本
 case-cards.md                           结构化案例卡库
 case-index.md                           案例库索引
 角色定位与变现路径.md                    判断力合伙人定义
 RRF案例验证库.md                        34个案例RRF分析
 research-wechat-visibility.md           公众号算法研究
 CASE-REF-Lovable.md                     Lovable案例参考
-lovable-拆解文章-v2.md                  Lovable拆解文章
 诊断问题库.md                           场景F积累
+产品构思-通用任务代理与副业AI助手.md     从老年AI管家v0.5拆出的独立方向
+老年AI管家-产品概要-v0.5.md             ★ 对外版本（含坐诚边界+分发问题）
+product-design-draft-v0.5.md            ★ 完整设计文档（含第十七部分·四项缺失）
+老年AI管家-缺失清单与解决方案.md        ★ 七个缺失+解法+优先级（框架红队法产出）
+推演流水账-老年AI管家-缺失三-新鲜感消退.md   第一轮推演
+推演流水账-老年AI管家-缺失三续-成就系统.md   第二轮推演（双线成就+里程碑海报）
 
 深度研究报告/                           RRF红队报告（8份）
+雷达周报/                               产品雷达周报存档
 ```
 
 ---
