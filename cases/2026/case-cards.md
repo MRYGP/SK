@@ -179,4 +179,67 @@ article_published: "终稿完成，待发布"
 
 ---
 
+## CASE-007-Paid
+
+```yaml
+case_id: "CASE-007-Paid"
+name: "Paid"
+status: "active"
+sector: "AI基础设施"
+sub_sector: "AI代理计费/价值度量"
+
+team_size: "未披露（小团队）"
+total_funding: "$33.3M"
+latest_round: "种子轮 $21.6M，Lightspeed领投，2025年9月"
+
+one_line: "帮AI代理公司追踪成本、度量价值、出具价值收据"
+target_user: "AI代理/AI SaaS公司（ToB）"
+pricing_model: "未披露"
+arr: "未披露"
+growth_signal: "估值超$100M，尚未到A轮；创始人前Outreach创始人（$4.4B估值）"
+
+core_tech: "成本追踪+价值度量+账单生成"
+moat_type: "数据壁垒（客户成本结构积累）+ 标准制定潜力"
+acquisition_channel: "直销+创始人人脉"
+
+redefine: "把“怎么收钱”重新定义为“怎么证明值多少钱”"
+redefine_dimensions: 3
+rule: "过渡中（正在定义AI代理的价值度量标准）"
+flywheel: "半飞轮"
+flywheel_diagram: "更多AI公司接入→更多定价数据→行业基准形成→成为定价标准参考→更多公司接入"
+rrr_verdict: "R✅ R→过渡 F→半飞轮"
+
+core_insight: "定价不是商业策略问题，是激励结构问题——按席收费让产品改进和收入增长对抗，按结果收费让两者同向"
+three_decisions:
+  - "不做支付，做价值度量（避开Stripe绝对优势）"
+  - "帮客户按结果计费而不是按调用量（复杂但直击价值鸿沟）"
+  - "44亿估值公司创始人再次创业（本身是最强信号）"
+
+failure_modes:
+  - "Zendesk（定义之争带来信任损耗）"
+  - "Leena AI（按用量收费导致客户不敢用）"
+  - "Intercom旧模式（按席收费与AI能力自我矛盾）"
+
+china_opportunity: "有，几乎空白"
+china_status: "ToB AI工具按结果收费基本空白，难点在结果定义标准化"
+china_window: "12-18个月"
+
+four_path: "工具（从垂直场景切入，如AI客服的结果追踪+价值收据）"
+counterintuitive: "你的产品越好，按席收费你越亏——因为客户需要的人越少"
+transferable_pattern:
+  - "激励结构检查：你的定价模式让你有动力做好产品吗？"
+  - "先定义结果，再谈收费——定义模糊的地方就是信任崩塌的地方"
+  - "价值可见性是定价的前提：看不见价值=定价无依据"
+theory_match: "DOC-D021维度跨越（从怎么收钱跳到怎么证明值多少）；DOC-P001财富公式·被留住"
+comparable_cases: ["Intercom/Fin（按结果收费的先行者）", "Sierra（从DayOne按结果收费）"]
+series_connection: "002（财富公式·被留住的新解读）004（分发壁垒vs标准制定壁垒）006（激励结构对比）"
+
+source_quality: "A"
+teardown_date: "2026-04"
+article_file: "cases/2026/007-Paid-按结果收费.md"
+article_published: "终稿完成，待发布"
+```
+
+---
+
 （下一个案例卡在这里追加）
