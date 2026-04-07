@@ -1,6 +1,6 @@
 # SK知识库 · 三湘问道
 
-> 最后更新：2026-04-04
+> 最后更新：2026-04-06
 > 维护者：changshayang
 > 路径：D:\sk
 > 身份：个人判断系统的操作系统 + AI可调用知识库
@@ -80,6 +80,7 @@
 | **回顾底稿** | `cases/2026/深度底稿/` |
 | **看进度** | `ops/执行状态总表.md`（每次开对话先看） |
 | **仓库维护** | `ops/执行状态总表.md` 第一节维护触发器 |
+| **实习生工作安排** | `ops/_temp-people/实习生前期.md` |
 
 ---
 
@@ -102,7 +103,7 @@
 ```
 001 ✅ 已发布    002 ✅ 已发布    003 ✅ 已发布
 004 ✅ 已发布    005 ✅ 已发布    006 ✅ 已发布
-007 ⚠️ 待发布    008 ❌ 待写
+007 ⚠️ 待发布    008 ⚠️ 底稿完成
 ```
 
 ---
@@ -174,14 +175,14 @@ agent3a_article.md                 讲稿改写prompt
 ```
 product-radar.md                   ★ 产品库（唯一入口，含待拆解+观察池+已拆解）
 signals.md                         ★ 信号源清单（三梯队+垂直方向）
-产品雷达-AI-Studio扫描指令.md      ★ 扫描Prompt×3 + URL速查表
+产品雷达-AI-Studio扫描指令.md      ★ 扫描Prompt×3 + URL速查表（v1.2）
 weekly/                            雷达周报存档
 ```
 
 ### ops/（1个文件 + _temp-people/）
 ```
 执行状态总表.md                    ★ 全局进度（含维护触发器，每次开对话先看）
-_temp-people/                      临时人员文件（实习生手册/入职须知/三人方案）
+_temp-people/                      实习生前期.md + 三人工作方案.md + 实习生A/B手册
 ```
 
 ### meta/（11个文件）
@@ -201,15 +202,15 @@ changelog.md                       更新日志
 
 ### cases/2026/
 ```
-文章终稿：001-007 + 自我介绍稿
+文章终稿：001-008 + 自我介绍稿
 case-cards.md / case-index.md       案例卡库 + 索引
 RRF案例验证库.md                   34个案例RRF验证
 角色定位与变现路径.md               判断力合伙人定义
 诊断问题库.md                      场景F积累
 写作计划-CET内共生概念弧-30篇布局.md
 产品构思-通用任务代理与副业AI助手.md
-research-wechat-visibility.md
-深度底稿/                          文章底稿（005-Lovable / 012-Tesla）
+research-wechat-visibility.md       冷启动策略研究
+深度底稿/                          文章底稿
 深度研究报告/                      RRF红队报告（8份）
 老年AI管家/                        产品设计v0.5（暂停）
 ```
@@ -244,7 +245,7 @@ research-wechat-visibility.md
 | **SK知识库** | D:\sk | 操作系统（本仓库） |
 | **三湘问道理论库** | E:\sanxiangwendao | 弹药库（90+篇理论文档） |
 | **CET理论库** | E:\CEET | 认知内共生理论（与30篇规划关联） |
-| **GitHub同步** | github.com/MRYGP/SK | 远程备份 |
+| **GitHub同步** | github.com/MRYGP/SK | 远程备份（实习生通过此访问全部文件） |
 
 ---
 
