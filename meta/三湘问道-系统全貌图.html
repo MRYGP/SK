@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三湘问道·AI应用拆解工作室 — 系统全貌图</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #f9f8f4;
+  color: #1a1a18;
+  padding: 32px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* ---- tokens ---- */
+:root {
+  --bg1: #ffffff;
+  --bg2: #f1efe8;
+  --bg3: #f9f8f4;
+  --text1: #1a1a18;
+  --text2: #5c5c58;
+  --text3: #9c9a92;
+  --border: rgba(0,0,0,0.12);
+  --border2: rgba(0,0,0,0.08);
+  --blue-bg: #e6f1fb; --blue-text: #0c447c;
+  --green-bg: #eaf3de; --green-text: #27500a;
+  --amber-bg: #faeeda; --amber-text: #633806;
+  --gray-bg: #f1efe8; --gray-text: #444441;
+  --purple-bg: #eeedfe; --purple-text: #3c3489;
+  --radius: 10px; --radius-sm: 6px;
+}
+
+/* ---- layout ---- */
+.sec { margin-bottom: 28px; }
+.sec-lbl {
+  font-size: 11px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text3); margin-bottom: 10px;
+}
+.card {
+  background: var(--bg1); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px;
+}
+.card-s {
+  background: var(--bg2); border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm); padding: 10px 13px;
+}
+
+/* ---- tags ---- */
+.tag {
+  display: inline-block; font-size: 11px; padding: 2px 8px;
+  border-radius: 4px; font-weight: 500; margin-top: 4px;
+}
+.t-p { background: var(--blue-bg); color: var(--blue-text); }
+.t-g { background: var(--green-bg); color: var(--green-text); }
+.t-a { background: var(--amber-bg); color: var(--amber-text); }
+.t-n { background: var(--gray-bg); color: var(--gray-text); border: 0.5px solid var(--border); }
+
+/* ---- chains ---- */
+.flex { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.cbox {
+  font-size: 12px; color: var(--text1); background: var(--bg1);
+  border: 0.5px solid var(--border); border-radius: 5px;
+  padding: 4px 9px; white-space: nowrap;
+}
+.carr { color: var(--text3); font-size: 13px; flex-shrink: 0; }
+
+/* ---- team cards ---- */
+.ptask {
+  font-size: 12px; color: var(--text2); padding: 3px 0;
+  border-top: 0.5px solid var(--border2); margin-top: 1px;
+}
+
+/* ---- product cards ---- */
+.prodcard {
+  background: var(--bg2); border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm); padding: 10px 12px;
+}
+
+/* ---- svg text ---- */
+.th { font-family: inherit; font-size: 14px; font-weight: 500; fill: #1a1a18; }
+.ts { font-family: inherit; font-size: 12px; font-weight: 400; fill: #5c5c58; }
+
+/* ---- flywheel node colors (light) ---- */
+.c-teal  rect { fill: #e1f5ee; stroke: #0f6e56; }
+.c-teal  .th  { fill: #085041; }
+.c-teal  .ts  { fill: #0f6e56; }
+.c-purple rect { fill: #eeedfe; stroke: #534ab7; }
+.c-purple .th  { fill: #3c3489; }
+.c-purple .ts  { fill: #534ab7; }
+.c-blue  rect { fill: #e6f1fb; stroke: #185fa5; }
+.c-blue  .th  { fill: #0c447c; }
+.c-blue  .ts  { fill: #185fa5; }
+.c-amber rect { fill: #faeeda; stroke: #854f0b; }
+.c-amber .th  { fill: #633806; }
+.c-amber .ts  { fill: #854f0b; }
+.c-coral rect { fill: #faece7; stroke: #993c1d; }
+.c-coral .th  { fill: #4a1b0c; }
+.c-coral .ts  { fill: #993c1d; }
+
+/* ---- grid ---- */
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+
+@media (max-width: 600px) {
+  body { padding: 20px 16px; }
+  .grid3, .grid4 { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- print ---- */
+@media print {
+  body { background: #fff; padding: 16px; }
+  .card, .card-s, .prodcard { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- NORTH STAR -->
+<div class="sec card" style="border-left: 4px solid #378ADD;">
+  <p style="font-size:10px;font-weight:600;letter-spacing:.1em;color:var(--text3);margin-bottom:6px">北极星 · 三湘问道·AI应用拆解工作室 · 2026年4月</p>
+  <p style="font-size:20px;font-weight:600;color:var(--text1);margin-bottom:8px">在AI奇点时代，找到10x/100x的机会，押注十年</p>
+  <p style="font-size:13px;color:var(--text2);margin-bottom:10px">先看一千部电影（扫描全球AI产品成败案例）→ 从证据里推演机会 → 科学创业，不拍脑袋</p>
+  <div class="flex">
+    <span class="tag t-p">合伙人 · 押注十年</span>
+    <span class="tag t-g">资源伙伴 · 互补合作</span>
+    <span class="tag t-a">跟投人 · 跟随判断</span>
+    <span style="font-size:11px;color:var(--text3);margin-left:4px">↑ 每篇内容同时给三类人发信号</span>
+  </div>
+</div>
+
+<!-- FLYWHEEL -->
+<div class="sec">
+<p class="sec-lbl">核心飞轮 · 顺时针循环</p>
+<svg width="100%" viewBox="0 0 680 240" role="img" style="display:block">
+<title>三湘问道科学创业飞轮</title>
+<desc>六步顺时针循环：扫描AI产品、拆解推演、公众号输出、吸引同频者、发现可复制方向、做MVP</desc>
+<defs>
+<marker id="fw-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<!-- ARROWS -->
+<line x1="160" y1="95" x2="260" y2="95" stroke="#9c9a92" stroke-width="1.5" marker-end="url(#fw-arr)" fill="none"/>
+<line x1="400" y1="95" x2="500" y2="95" stroke="#9c9a92" stroke-width="1.5" marker-end="url(#fw-arr)" fill="none"/>
+<line x1="570" y1="116" x2="570" y2="174" stroke="#9c9a92" stroke-width="1.5" marker-end="url(#fw-arr)" fill="none"/>
+<line x1="500" y1="195" x2="400" y2="195" stroke="#9c9a92" stroke-width="1.5" marker-end="url(#fw-arr)" fill="none"/>
+<line x1="260" y1="195" x2="160" y2="195" stroke="#9c9a92" stroke-width="1.5" marker-end="url(#fw-arr)" fill="none"/>
+<line x1="90" y1="174" x2="90" y2="116" stroke="#9c9a92" stroke-width="1.5" marker-end="url(#fw-arr)" fill="none"/>
+<!-- CENTER -->
+<text x="340" y="136" text-anchor="middle" dominant-baseline="central" class="ts" style="fill:#9c9a92">科学创业飞轮</text>
+<text x="340" y="153" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#9c9a92;font-family:inherit">↺ 顺时针循环</text>
+<!-- TOP ROW -->
+<g class="c-teal">
+<rect x="20" y="74" width="140" height="42" rx="8" stroke-width="0.5"/>
+<text class="th" x="90" y="87" text-anchor="middle" dominant-baseline="central">扫描AI产品</text>
+<text class="ts" x="90" y="104" text-anchor="middle" dominant-baseline="central">产品雷达 · 王晶执行</text>
+</g>
+<g class="c-purple">
+<rect x="260" y="74" width="140" height="42" rx="8" stroke-width="0.5"/>
+<text class="th" x="330" y="87" text-anchor="middle" dominant-baseline="central">拆解推演校正</text>
+<text class="ts" x="330" y="104" text-anchor="middle" dominant-baseline="central">那一刀 · 杨</text>
+</g>
+<g class="c-blue">
+<rect x="500" y="74" width="140" height="42" rx="8" stroke-width="0.5"/>
+<text class="th" x="570" y="87" text-anchor="middle" dominant-baseline="central">公众号输出</text>
+<text class="ts" x="570" y="104" text-anchor="middle" dominant-baseline="central">自动化 · 王晶</text>
+</g>
+<!-- BOTTOM ROW -->
+<g class="c-blue">
+<rect x="500" y="174" width="140" height="42" rx="8" stroke-width="0.5"/>
+<text class="th" x="570" y="187" text-anchor="middle" dominant-baseline="central">吸引同频者</text>
+<text class="ts" x="570" y="204" text-anchor="middle" dominant-baseline="central">合伙人 · 资源 · 跟投</text>
+</g>
+<g class="c-amber">
+<rect x="260" y="174" width="140" height="42" rx="8" stroke-width="0.5"/>
+<text class="th" x="330" y="187" text-anchor="middle" dominant-baseline="central">发现复制方向</text>
+<text class="ts" x="330" y="204" text-anchor="middle" dominant-baseline="central">周旭东评估卡</text>
+</g>
+<g class="c-coral">
+<rect x="20" y="174" width="140" height="42" rx="8" stroke-width="0.5"/>
+<text class="th" x="90" y="187" text-anchor="middle" dominant-baseline="central">做MVP推市场</text>
+<text class="ts" x="90" y="204" text-anchor="middle" dominant-baseline="central">PK后选1-2个</text>
+</g>
+</svg>
+</div>
+
+<!-- THREE CHAINS -->
+<div class="sec">
+<p class="sec-lbl">三条工作链路</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div class="card-s">
+  <p style="font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px">链路1 · 产品雷达 · 王晶自动化</p>
+  <div class="flex">
+    <span class="cbox">信号源</span><span class="carr">→</span>
+    <span class="cbox">初筛5问打分</span><span class="carr">→</span>
+    <span class="cbox">product-radar.md</span><span class="carr">→</span>
+    <span class="cbox">待拆解队列</span><span class="carr">→</span>
+    <span class="cbox">SK仓库</span>
+  </div>
+</div>
+<div class="card-s">
+  <p style="font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px">链路2 · 内容生产 · 杨主导</p>
+  <div class="flex">
+    <span class="cbox">选题判断</span><span class="carr">→</span>
+    <span class="cbox">10维度底稿</span><span class="carr">→</span>
+    <span class="cbox" style="border-color:#BA7517;color:#633806;background:#faeeda">那一刀 ✓</span><span class="carr">→</span>
+    <span class="cbox">改写润色</span><span class="carr">→</span>
+    <span class="cbox">第一读者检测</span><span class="carr">→</span>
+    <span class="cbox">发布</span>
+  </div>
+</div>
+<div class="card-s">
+  <p style="font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px">链路3 · AI拆解 · 沉淀知识资产</p>
+  <div class="flex">
+    <span class="cbox">10维度分析</span><span class="carr">→</span>
+    <span class="cbox">理论映射</span><span class="carr">→</span>
+    <span class="cbox">四路决策</span><span class="carr">→</span>
+    <span class="cbox">案例卡</span><span class="carr">→</span>
+    <span class="cbox">case-cards.md</span>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- TEAM -->
+<div class="sec">
+<p class="sec-lbl">三人分工 + AI评审</p>
+<div class="grid4">
+<div style="padding:12px 14px;border-radius:0 8px 8px 0;border:0.5px solid var(--border);border-left:3px solid #7F77DD;background:var(--bg1)">
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:2px">杨 · 主理人</p>
+  <p style="font-size:11px;color:var(--text3);margin-bottom:7px">判断力核心，最终决策者</p>
+  <div class="ptask">那一刀：每篇反直觉洞察</div>
+  <div class="ptask">拆解→推演→理论校正→案例类比</div>
+  <div class="ptask">产品PK最终决策</div>
+</div>
+<div style="padding:12px 14px;border-radius:0 8px 8px 0;border:0.5px solid var(--border);border-left:3px solid #1D9E75;background:var(--bg1)">
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:2px">王晶 · 工具链</p>
+  <p style="font-size:11px;color:var(--text3);margin-bottom:7px">自动化一切可自动的</p>
+  <div class="ptask">第2周：雷达扫描脚本</div>
+  <div class="ptask">第3周：发布流水线</div>
+  <div class="ptask">第4周：完整链路文档</div>
+</div>
+<div style="padding:12px 14px;border-radius:0 8px 8px 0;border:0.5px solid var(--border);border-left:3px solid #BA7517;background:var(--bg1)">
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:2px">周旭东 · 判断质量</p>
+  <p style="font-size:11px;color:var(--text3);margin-bottom:7px">3个月窗口，9月入学</p>
+  <div class="ptask">每周2-3张可复制性评估卡</div>
+  <div class="ptask">研究雷达SOP（可交接）</div>
+  <div class="ptask">离职前参与产品PK</div>
+</div>
+<div style="padding:12px 14px;border-radius:0 8px 8px 0;border:0.5px solid var(--border);border-left:3px solid #378ADD;background:var(--bg1)">
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:2px">Claude+GPT+DS</p>
+  <p style="font-size:11px;color:var(--text3);margin-bottom:7px">PK时的客观打分者</p>
+  <div class="ptask">Claude：方法论+铁律</div>
+  <div class="ptask">GPT-4o：市场机会</div>
+  <div class="ptask">DeepSeek：中国本土</div>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT POOL -->
+<div class="sec">
+<p class="sec-lbl">产品构思库 · 6/10 → 凑够10个后做红队攻击PK → 选1-2个MVP</p>
+<div class="grid3" style="margin-bottom:10px">
+<div class="prodcard">
+  <p style="font-size:10px;color:var(--text3);margin-bottom:3px">001</p>
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:3px">老年AI管家</p>
+  <p style="font-size:11px;color:var(--text2);margin-bottom:6px">圈子潮人·被看见</p>
+  <span class="tag t-n">暂停·等合伙人</span>
+</div>
+<div class="prodcard">
+  <p style="font-size:10px;color:var(--text3);margin-bottom:3px">002</p>
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:3px">活书 KAIROS</p>
+  <p style="font-size:11px;color:var(--text2);margin-bottom:6px">Spotify for Wisdom</p>
+  <span class="tag t-n">未立项</span>
+</div>
+<div class="prodcard">
+  <p style="font-size:10px;color:var(--text3);margin-bottom:3px">003</p>
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:3px">交互式自传</p>
+  <p style="font-size:11px;color:var(--text2);margin-bottom:6px">企业家智慧传承</p>
+  <span class="tag t-a">等第一个客户</span>
+</div>
+<div class="prodcard">
+  <p style="font-size:10px;color:var(--text3);margin-bottom:3px">004</p>
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:3px">AI副业助手</p>
+  <p style="font-size:11px;color:var(--text2);margin-bottom:6px">宝妈学生·月赚500-2000</p>
+  <span class="tag t-n">未立项</span>
+</div>
+<div class="prodcard">
+  <p style="font-size:10px;color:var(--text3);margin-bottom:3px">005</p>
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:3px">AI皮肤管理</p>
+  <p style="font-size:11px;color:var(--text2);margin-bottom:6px">玄学→皮肤工程</p>
+  <span class="tag t-n">未立项</span>
+</div>
+<div class="prodcard">
+  <p style="font-size:10px;color:var(--text3);margin-bottom:3px">006</p>
+  <p style="font-size:13px;font-weight:600;color:var(--text1);margin-bottom:3px">AI赋能中介</p>
+  <p style="font-size:11px;color:var(--text2);margin-bottom:6px">DCC2026 · 44万字积累</p>
+  <span class="tag t-n">停滞·等合伙人</span>
+</div>
+</div>
+<!-- PK pipeline -->
+<div class="card-s">
+  <div class="flex">
+    <span style="font-size:11px;color:var(--text3)">PK流程：</span>
+    <span class="cbox">凑够10个</span><span class="carr">→</span>
+    <span class="cbox">5维度打分</span><span class="carr">→</span>
+    <span class="cbox">红队攻击</span><span class="carr">→</span>
+    <span class="cbox">黑马保护</span><span class="carr">→</span>
+    <span class="cbox" style="border-color:#27500a;color:#27500a;background:#eaf3de">选1-2个 MVP</span>
+  </div>
+</div>
+</div>
+
+<!-- TOOLS -->
+<div class="sec">
+<p class="sec-lbl">工具矩阵</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px">
+<div class="card-s">
+  <p style="font-size:12px;font-weight:600;color:var(--text1);margin-bottom:3px">SK仓库</p>
+  <p style="font-size:11px;color:var(--text2)">D:\sk · GitHub<br>知识中枢，所有资产</p>
+</div>
+<div class="card-s">
+  <p style="font-size:12px;font-weight:600;color:var(--text1);margin-bottom:3px">Claude · 本Project</p>
+  <p style="font-size:11px;color:var(--text2)">拆解·推演·校正<br>全流程主力思考</p>
+</div>
+<div class="card-s">
+  <p style="font-size:12px;font-weight:600;color:var(--text1);margin-bottom:3px">前置GPTS</p>
+  <p style="font-size:11px;color:var(--text2)">临时落库·散论资产化<br>雷达/落库/散论三模式</p>
+</div>
+<div class="card-s">
+  <p style="font-size:12px;font-weight:600;color:var(--text1);margin-bottom:3px">AI Studio · 雷达</p>
+  <p style="font-size:11px;color:var(--text2)">批量扫描信号源<br>王晶自动化脚本</p>
+</div>
+<div class="card-s">
+  <p style="font-size:12px;font-weight:600;color:var(--text1);margin-bottom:3px">公众号发布</p>
+  <p style="font-size:11px;color:var(--text2)">内容出口·信号系统<br>王晶第3周交付流水线</p>
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div style="margin-top:32px;padding-top:16px;border-top:0.5px solid var(--border2);font-size:11px;color:var(--text3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+  <span>三湘问道·AI应用拆解工作室</span>
+  <span>版本：2026-04-11 · 源文件：D:\sk\meta\三湘问道-系统全貌图.html</span>
+</div>
+
+</body>
+</html>
