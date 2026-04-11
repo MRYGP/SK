@@ -1,6 +1,6 @@
 # SK知识库 · 三湘问道
 
-> 最后更新：2026-04-06
+> 最后更新：2026-04-11
 > 维护者：changshayang
 > 路径：D:\sk
 > 身份：个人判断系统的操作系统 + AI可调用知识库
@@ -51,7 +51,7 @@
 | 拆解模板 | `core/product-teardown-template-v4.0.md` |
 | 推演SOP | `core/SKILL-推演SOP-v1.3.md` |
 | 评估引擎 | `core/评估引擎速查版.md` |
-| 理论库 | `theory/` 目录下21个DOC文件 |
+| 理论库 | `theory/` 目录下22个DOC文件 |
 | 失败模式 | `core/failure_modes.yml` |
 | 铁律 | `core/三湘问道铁律.md` |
 | 案例卡 | `cases/2026/case-cards.md` + `content/case-card-format-v1.0.md` |
@@ -69,8 +69,8 @@
 | **写文章** | `content/article_template` `content/公众号写作指南` `content/公众号内容生产经验手册` |
 | **选题** | `北极星文档` `content/公众号内容大纲-30篇规划` |
 | **做评估** | `core/评估引擎速查版` `core/failure_modes` |
-| **找理论** | `theory/` 目录下所有DOC文件 |
-| **做排除判断** | `core/三湘问道铁律` |
+| **找理论** | `theory/` 目录下所有DOC文件（22个） |
+| **做排除判断/入场前校准** | `core/三湘问道铁律` `theory/DOC-S079-创业者十个默认假设` |
 | **推演新方向** | `core/SKILL-推演SOP-v1.3` `core/failure_modes` |
 | **产品雷达** | `radar/product-radar.md`（产品库）`radar/signals.md`（信号源）`radar/产品雷达-AI-Studio扫描指令.md`（扫描指令） |
 | **雷达周报** | `radar/weekly/` |
@@ -116,7 +116,7 @@ D:\sk\
 ├── 北极星文档.md                ← 战略锚点
 │
 ├── core/                        ← 稳定层：规则/模板/判断框架（8个文件）
-├── theory/                      ← 稳定层：理论输入（21个文件）
+├── theory/                      ← 稳定层：理论输入（22个文件）
 ├── content/                     ← 稳定层：内容模板与发布规则（10个文件）
 ├── meta/                        ← 稳定层：系统指令/架构设计（11个文件）
 │
@@ -155,6 +155,7 @@ DOC-S070-B端杠杆.md               DOC-S071-白标SaaS与生态链杠杆.md
 DOC-S074-换题思维.md              DOC-S075-精益创业.md
 DOC-S076-透过现象看本质.md        DOC-S077-合理化行为分析框架.md
 DOC-S078-高频业务的战略价值.md
+DOC-S079-创业者十个默认假设.md
 ```
 
 ### content/（10个文件）
