@@ -1,6 +1,6 @@
 # SK知识库 · 三湘问道
 
-> 最后更新：2026-04-11
+> 最后更新：2026-04-14
 > 维护者：changshayang
 > 路径：D:\sk
 > 身份：个人判断系统的操作系统 + AI可调用知识库
@@ -69,7 +69,8 @@
 | **写文章** | `content/article_template` `content/公众号写作指南` `content/公众号内容生产经验手册` |
 | **选题** | `北极星文档` `content/公众号内容大纲-30篇规划` |
 | **做评估** | `core/评估引擎速查版` `core/failure_modes` |
-| **找理论** | `theory/` 目录下所有DOC文件（22个） |
+| **找理论** | `theory/` 目录下所有DOC文件（23个） |
+| **评估商业模式是否服务真实需求/识别伪需求** | `theory/DOC-D023-伪需求陷阱`（Goodhart定律+眼镜蛇效应+三问框架） |
 | **做排除判断/入场前校准** | `core/三湘问道铁律` `theory/DOC-S079-创业者十个默认假设` |
 | **推演新方向** | `core/SKILL-推演SOP-v1.3` `core/failure_modes` |
 | **产品雷达** | `radar/product-radar.md`（产品库）`radar/signals.md`（信号源）`radar/产品雷达-AI-Studio扫描指令.md`（扫描指令） |
@@ -118,7 +119,7 @@ D:\sk\
 ├── 北极星文档.md                ← 战略锚点
 │
 ├── core/                        ← 稳定层：规则/模板/判断框架（8个文件）
-├── theory/                      ← 稳定层：理论输入（22个文件）
+├── theory/                      ← 稳定层：理论输入（23个文件）
 ├── content/                     ← 稳定层：内容模板与发布规则（10个文件）
 ├── meta/                        ← 稳定层：系统指令/架构设计（11个文件）
 │
@@ -145,10 +146,11 @@ failure_modes.yml                 15种失败模式
 evidence_levels.yml               A/B/C/X证据等级
 ```
 
-### theory/（21个文件）
+### theory/（23个文件）
 ```
 DOC-D014-财富创造的范式转移.md    DOC-D018-种树型vs种菜型.md
 DOC-D021-维度跨越.md              DOC-D022-重新定义问题与飞轮构建.md ★RRF
+DOC-D023-伪需求陷阱.md            ★ 拆解时校正：这个产品是否服务真实需求？Goodhart定律+三问框架
 DOC-P001-财富公式.md              DOC-P002-AlphaFold推演公式.md
 DOC-S003-初创企业生存法则.md      DOC-S032-破坏式创新.md
 DOC-S036-规则制定者.md            DOC-S037-从0到1.md
