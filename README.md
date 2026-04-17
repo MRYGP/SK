@@ -183,7 +183,7 @@ agent3a_article.md                 讲稿改写prompt
 ### radar/（3个文件 + weekly/）
 ```
 product-radar.md                   ★ 产品库（唯一入口，含待拆解+观察池+已拆解）
-signals.md                         ★ 信号源清单（三梯队+垂直方向）
+signals.md                         ★ 信号源清单（L1四入口+L2梯队/垂直/中文）
 产品雷达-AI-Studio扫描指令.md      ★ 扫描Prompt×3 + URL速查表（v1.3）
 weekly/                            雷达周报存档
 ```

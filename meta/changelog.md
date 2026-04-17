@@ -30,6 +30,7 @@
 - `ops/_temp-people/实习生前期.md` 归档
 - 011 文章文件名去掉 v3 后缀
 - README.md/case-index.md/执行状态总表 同步修正残留引用
+- `radar/signals.md` 定为合并完整版（L1 四入口 + L2 梯队/垂直）；此前仅三梯队的旧文件与临时名 `signalsV1` 已停用，以当前 `signals.md` 为唯一正式入口
 
 ---
 

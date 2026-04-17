@@ -326,8 +326,8 @@ AI/创业类群：
 | 公众号写作指南 | D:\sk\content\ | 质量标准、禁用词 |
 | 公众号内容生产经验手册 | D:\sk\content\ | 19条检查清单、所有历史教训 |
 | article_template | D:\sk\content\ | 5种文章类型 |
-| 信号源清单 | D:\sk\cases\2026\ | 每天/每周看什么 |
-| product-radar | D:\sk\cases\2026\ | 产品库和初筛5问 |
+| 信号源清单 | `D:\sk\radar\signals.md` | L1四入口+L2梯队/垂直，每天/每周看什么 |
+| product-radar | `D:\sk\radar\product-radar.md` | 产品库和初筛5问 |
 | 001-v6全文 | D:\sk\cases\2026\ | 已发布的第一篇，了解风格 |
 
 ---

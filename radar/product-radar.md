@@ -8,7 +8,7 @@
 
 ## 信号源
 
-**详见 `radar/signals.md`**（三个梯队 + 五个垂直方向 + 中文平台账号）
+**详见 `radar/signals.md`**（L1 四入口自动雷达 + L2 三梯队 / 垂直方向 + 中文平台账号）
 
 简要：
 - **每天5分钟**：Ben's Bites、@bentossell、@levelsio、Product Hunt AI、@heyBarsee、猫不白

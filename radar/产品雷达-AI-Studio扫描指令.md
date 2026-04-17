@@ -434,7 +434,7 @@ Gemini有联网能力，能搜到一部分。不全，但当补充。
 ```
 D:\sk\radar\
 ├── product-radar.md                   ← 唯一产品库（追加新发现）
-├── signals.md                         ← 信号源配置
+├── signals.md                         ← 信号源配置（L1+L2 合并版）
 └── weekly\                           ← 每周深度扫描结果
     ├── radar-weekly-2026-03-31.md
     ├── radar-weekly-2026-04-07.md
