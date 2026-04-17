@@ -1,6 +1,6 @@
 # SK知识库 · 三湘问道
 
-> 最后更新：2026-04-15
+> 最后更新：2026-04-18
 > 维护者：changshayang
 > 路径：D:\sk
 > 身份：个人判断系统的操作系统 + AI可调用知识库
@@ -33,7 +33,7 @@
 | 步骤 | 文件 |
 |------|------|
 | 选题 | `北极星文档.md` + `content/公众号内容大纲-30篇规划.md` |
-| 拆解底稿 | `core/product-teardown-template-v4.0.md`（10维度） |
+| 拆解底稿 | `core/product-teardown-template.md`（10维度） |
 | 写文章 | `content/article_template.md`（5种结构） + `content/公众号写作指南.md` |
 | 避坑 | `content/公众号内容生产经验手册.md`（30条教训） |
 | 改写 | GPTs写作工坊：`meta/写作工坊-系统指令.md` |
@@ -43,12 +43,12 @@
 ### 链路三：AI拆解（积累判断力）
 
 ```
-10维度分析 → 那一刀 → 理论映射 → 四路决策 → 沉淀案例卡
+10维度分析 → 那一刀 → 理论映射 → 四路决策 → **可迁移框架提炼** → 沉淀案例卡
 ```
 
 | 步骤 | 文件 |
 |------|------|
-| 拆解模板 | `core/product-teardown-template-v4.0.md` |
+| 拆解模板 | `core/product-teardown-template.md` |
 | 推演SOP | `core/SKILL-推演SOP-v1.3.md` |
 | 评估引擎 | `core/评估引擎速查版.md` |
 | **产品评估决策清单** | `core/产品评估决策清单-v1.0.md` ★ 新增 |
@@ -66,19 +66,21 @@
 
 | 要做什么 | 搜什么 |
 |---------|--------|
-| **拆解产品** | `core/product-teardown-template-v4.0` `content/aichajie-案例模板` |
+| **拆解产品** | `core/product-teardown-template` `content/aichajie-案例模板` |
 | **写文章** | `content/article_template` `content/公众号写作指南` `content/公众号内容生产经验手册`（30条教训+22条检查清单+Phase 0） |
 | **选题** | `北极星文档` `content/公众号内容大纲-30篇规划` |
 | **做评估** | `core/评估引擎速查版` `core/failure_modes` |
 | **新产品方向过必要条件检查** | `core/产品评估决策清单-v1.0`（6必须条件+复制三层次+换题模式P1-P4） |
-| **找理论** | `theory/` 目录下所有DOC文件（23个） |
+| **找理论** | `theory/` 目录下所有DOC文件（24个） |
 | **评估商业模式是否服务真实需求/识别伪需求** | `theory/DOC-D023-伪需求陷阱`（Goodhart定律+眼镜蛇效应+三问：指标能否被单独操控/时间是期友还是敌人/消失后用户是否更好） |
+| **判断某个方向是否应该继续坚持/要不要放弃/转型还是止损** | `theory/DOC-D025-不下牌桌`（三问：桌值得坐？还在场吗？换牌还是下桌？） |
 | **做排除判断/入场前校准** | `core/三湘问道铁律` `theory/DOC-S079-创业者十个默认假设` |
 | **推演新方向** | `core/SKILL-推演SOP-v1.3` `core/failure_modes` |
 | **产品雷达** | `radar/product-radar.md`（产品库）`radar/signals.md`（信号源）`radar/产品雷达-AI-Studio扫描指令.md`（扫描指令） |
 | **雷达周报** | `radar/weekly/` |
 | **红队压测** | `meta/SK知识库使用方法-框架红队法.md` |
 | **案例找规律** | `cases/2026/case-cards.md` `content/case-card-format-v1.0.md` |
+| **尝一口方法论/找卡住的人** | `推演流水账-尝一口方法论`（下半场打法锚点） |
 | **变现/角色定位** | `cases/2026/角色定位与变现路径.md` |
 | **产品对标/复制排名** | `cases/2026/产品对标库-38个AI产品复制价值排名.md` |
 | **AI产品复制推演框架** | `core/SKILL-AI产品复制推演框架-v0.1.md` |
@@ -109,7 +111,8 @@
 001 ✅ 已发布    002 ✅ 已发布    003 ✅ 已发布
 004 ✅ 已发布    005 ✅ 已发布    006 ✅ 已发布
 007 ✅ 已发布    008 ✅ 已发布
-009 ⏳ 初稿完成  010 ⏳ 初稿完成
+009 ✅ 已发布    010 ✅ 已发布（发法C改版）    011 ⏳ 定稿待发布（发法C改版）
+004B ⏳ 骨架     006B ⏳ 骨架
 ```
 
 ---
@@ -122,7 +125,7 @@ D:\sk\
 ├── 北极星文档.md                ← 战略锚点
 │
 ├── core/                        ← 稳定层：规则/模板/判断框架（10个文件）
-├── theory/                      ← 稳定层：理论输入（23个文件）
+├── theory/                      ← 稳定层：理论输入（24个文件）
 ├── content/                     ← 稳定层：内容模板与发布规则（10个文件）
 ├── meta/                        ← 稳定层：系统指令/架构设计（11个文件）
 │
@@ -138,7 +141,7 @@ D:\sk\
 
 ### core/（10个文件）
 ```
-product-teardown-template-v4.0.md  10维度拆解模板
+product-teardown-template.md       ★ v4.2 · 10维度+可迁移框架提炼（第11章，强制最后一步）
 SKILL-推演SOP-v1.3.md             推演八步法
 SKILL-产品设计方法论-v1.0.md       十步产品设计法
 SKILL-AI产品复制推演框架-v0.1.md  ★ 海外AI产品复制/对标分析7步法
@@ -155,6 +158,7 @@ evidence_levels.yml               A/B/C/X证据等级
 DOC-D014-财富创造的范式转移.md    DOC-D018-种树型vs种菜型.md
 DOC-D021-维度跨越.md              DOC-D022-重新定义问题与飞轮构建.md ★RRF
 DOC-D023-伪需求陷阱.md            ★ 拆解时校正：这个产品是否服务真实需求？
+DOC-D025-不下牌桌.md              ★ 前置判断：在任何「怎么赢」的讨论前，确认你还在不在场
 DOC-P001-财富公式.md              DOC-P002-AlphaFold推演公式.md
 DOC-S003-初创企业生存法则.md      DOC-S032-破坏式创新.md
 DOC-S036-规则制定者.md            DOC-S037-从0到1.md
@@ -199,7 +203,7 @@ _temp-people/                      实习生前期.md + 三人工作方案.md + 
 CLAUDE系统指令.md                    ★ 思考Project指令（无版本号，始终是最新版）
 写作工坊-系统指令.md               ★ 写作GPTs指令
 第一读者-系统指令.md               ★ 第一读者GPTs指令
-gpts-deep-researcher-design.md     深度研究员v1.1
+gpts-deep-researcher-design.md     深度研究员v1.2
 SK知识库使用方法-框架红队法.md     ★ 框架红队法（含实战记录）
 AI拆解系统架构-v0.1.md             系统架构蓝图（含远期dimensions/patterns规划）
 产品雷达-自动化方案.md             雷达自动化方案（待实现）
@@ -212,7 +216,7 @@ changelog.md                       更新日志
 ### cases/2026/
 ```
 文章终稿：001-008 + 自我介绍稿 + 009/010初稿
-case-cards.md / case-index.md       案例卡库（6张）+ 索引
+case-cards.md / case-index.md       案例卡库（7张）+ 索引
 RRF案例验证库.md                   34个案例RRF验证
 角色定位与变现路径.md               判断力合伙人定义
 诊断问题库.md                      场景F积累
