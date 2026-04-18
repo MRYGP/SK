@@ -483,3 +483,96 @@ article_published: "待写"
 ---
 
 （下一个案例卡在这里追加）
+
+---
+
+## CASE-012-Cactus
+
+```yaml
+case_id: "CASE-012-Cactus"
+name: "Cactus"
+status: "active"
+sector: "AI工具"
+sub_sector: "AI语音接待/home services垂直SaaS"
+
+team_size: "2-9人（冲突数据）"
+total_funding: "$7.5M+（$7M Seed，Wellington+YC，2025-11）"
+latest_round: "Seed $7M，Wellington Management领投，2025-11"
+
+one_line: "帮美国HVAC/水管/电气等上门服务商家24/7接听来电、筛选线索、安排预约"
+target_user: "1-20人 home services 商家（HVAC/水管/电气/屋顶/景观/承包），年收入$100万-$2000万"
+pricing_model: "月费订阅（$49-$500多版本冲突，全部X级，不做决策依据）"
+arr: "未找到（数据空白）"
+growth_signal: "YC X25，$7M融资，Wellington参与种子轮（罕见），无独立用户增长数据"
+
+core_tech: "AI语音（ASR+TTS）+ lead qualification + CRM集成（ServiceTitan/Jobber）+ aftercare自动化"
+moat_type: "垂直脚本数据（中等）+ CRM集成沉没成本（中等）；无飞轮"
+acquisition_channel: "Demo驱动+直销+YC网络"
+
+founder_original_observation: |
+  行为模式型（A级，Ajith LinkedIn 2025-12）：
+  运营Cravd时看到私厨和承包商反复出现「the same pattern」——干活时没法接电话，客户流失。
+  跨行业验证（私厨→承包商）触发pivot。
+  数字型（B级）：每100个inquiry只有5-10%是真正qualified leads。
+  场景型（A级）：owner「stays up until three in the morning answering phones」。
+  核心重新定义：问题不是营销不足，而是「首触点效率」——正在服务时无法销售。
+
+stuck_person: "Mike，42岁，德克萨斯HVAC修理工。七月正午在屋顶换压缩机，电话响无法接，40分钟后爬下来，客户已找别家。每周2-3次，每次$350-500工单。卡住的不是不想接，是物理上不可能同时在屋顶和在电话里。"
+
+aha_moment: "客户Erin Smith：'Our customers often don't realize they're not speaking with a real person.'（B级）——aha不是'AI接电话'，是'接起来了，而且客户没察觉是AI'"
+
+those_a_刀: "问题不是个体服务商找不到客户。是当客户打来电话时，老板正在屋顶上、管道里、或者开车去下一个工地——那通电话会打给接起来的下一个人。Cactus是他们从来没钱雇的第一个员工。"
+
+redefine: "从'客服质量提升/呼叫中心升级'重新定义为'干活时没人接→每通来电都是钱'；真正竞争对手是语音信箱和工作现实，不是其他AI工具"
+redefine_dimensions: 5
+rule: "套利者（无规则制定动作，依赖第三方语音AI API，无开放生态）"
+flywheel: "无飞轮/纯漏斗（①多边参与❌；②核心价值随规模稀释❌；③退出成本中等✓；④单圈正收益假设✓）"
+rrr_verdict: "R✅（5维度）/ R套利者 / F无飞轮 → 有R无RF，一次性爆款风险"
+
+pivot: "Cravd（私厨撮合平台，2024年6月）→ Cactus泛solopreneur AI copilot → Cactus home services AI call center（当前）。定位从'帮所有个体户管后台'收缩为'帮美国上门服务商家接电话+接单'"
+
+three_success_mechanisms:
+  - "ROI极清晰：漏接1通电话=$350-500工单，$49/月订阅vs月均减少5-10通漏接，即刻正向"
+  - "垂直脚本信任门槛：HVAC专业术语训练，通用AI答不了'你们处理Lennox还是Carrier'，Cactus能"
+  - "aftercare automation：不只接inbound，还主动联系老客做维保提醒/复购，是'进攻型'而非纯'防守型'工具"
+
+failure_risks:
+  - "FM001平台内置：ServiceTitan有能力内置AI接听功能，Cactus可能从'独立产品'变成'应该有的功能'"
+  - "FM015无飞轮：增长靠销售投入，竞品建立飞轮后差距将拉大"
+  - "FM003 Pre-PMF：Step 0找不到任何独立用户评价，PMF尚未证明"
+
+china_opportunity: "有，但需换题"
+china_status: "电话接单渠道不适用；真正机会是'AI接微信询盘+自动报价+预约'，针对装修/家政/维修个体户"
+china_window: "18-24个月"
+china_close_signal: "腾讯企微推出'智能接单助手'免费给服务商家"
+china_note: "中国版不是直接复制Cactus，是把P5洞察（首触点鸿沟）迁移到微信渠道+国内服务型个体户"
+
+four_path: "观察（提炼P5模式+等待有企微/平台资源合伙人）"
+four_path_note: "中国版需要换题（电话→微信），团队适配度3/10，当前不直接推进"
+next_action: "把首触点鸿沟概念写入012拆解文章，测试读者反应，看是否有服务型行业资源的人来接触"
+
+counterituitive: "服务商的问题不是营销不够好，是正在干活时没人帮他接那通最关键的电话——找客户的问题早已解决，留住打来的客户才是真正的漏斗"
+transferrable_pattern: |
+  P5首触点鸿沟原则（新模式，2026-04-18）
+  框架名称：「首触点鸿沟原则」
+  一句话：任何「服务提供者=销售者」的行业，都存在「正在服务时无法销售」的结构性冲突——填上这个鸿沟的产品，有最清晰的ROI和最强的刚需属性。
+  核心机制：Mike在屋顶上时打来的那通电话，是他「做了所有正确的营销之后」的结果——营销能把客户带到打电话这步，但接不接得到营销管不了。AI接住那通电话，ROI几乎立刻可算。
+  适用：服务提供者=销售者（一人/小团队）；首触点是成交关键；客户同时联系多家先到先得；每次成交>$100；服务可预约。
+  不适用：有专职销售团队的企业；复杂多轮B2B销售；客单价极低（<$50）；一次性非预约服务。
+  可迁移场景：HVAC/水管/电气修理→美容美发→摄影/私教/私厨→中国版维修/家政/装修（渠道换成微信）。
+  对下一个案例：用P5检验是否存在「服务-销售分裂」结构，如果有，追问'首触点AI化的ROI算得清吗'。
+
+theory_match:
+  - "DOC-S074换题思维（从获客问题换成首触点效率问题，是本案最核心的思维动作）"
+  - "DOC-S032破坏式创新（服务被忽视的1-10人小团队，买不起$3000/月呼叫中心）"
+  - "DOC-P002推演公式（约束条件2人团队→唯一解垂直聚焦→意外收获行业脚本更好）"
+comparable_cases: ["CASE-006-Yoodli（同样无飞轮但有方法论壁垒；Cactus缺乏等效防御）", "CASE-002-Gamma（P1产出物分发 vs P5首触点鸿沟，两种换题模式对比）"]
+
+data_quality_note: "Step 0数据最严重缺口：付费用户数/ARR/MAU全部未找到；定价三版本冲突全部X级；无独立第三方用户评价——整体经营面透明度极低，分析结论限于产品逻辑层，不做商业规模判断"
+
+source_quality: "A+B（创始人洞察清晰；经营数据全空白）"
+teardown_date: "2026-04-18"
+article_file: "cases/2026/012-Cactus-首触点鸿沟.md（待写）"
+article_published: "待写"
+depth_draft: "cases/2026/深度底稿/012-Cactus-拆解底稿.md"
+```
