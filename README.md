@@ -99,7 +99,6 @@
 | **看进度** | `ops/执行状态总表.md`（每次开对话先看） |
 | **月度审计** | `ops/月度文档健康度审计协议.md` ★ 月度跑一次,识别死文件 |
 | **仓库维护** | `ops/执行状态总表.md` 第一节维护触发器 |
-| **做 ChatGPT Project / GPTS 文件配置** | `meta/SK工作台-项目文件上传策略.md` |
 | **实习生工作安排** | `ops/_temp-people/实习生前期.md` |
 
 ---
@@ -241,7 +240,6 @@ PK决策框架-红队攻击模式.md         PK 决策模式
 RRF理论发展路径.md                 已完成档案(2026-04-26 标记)
 RRF理论评估指令.md                 已完成档案(2026-04-26 标记)
 理论库优先级清单.md                理论补充排序
-SK工作台-项目文件上传策略.md          ChatGPT Project / GPTS 文件上传与 GitHub 现读规则
 changelog.md                       更新日志
 _archive/                          AI拆解系统架构-v0.1.md(未启动归档)
 产品雷达-自动化方案.md(未启动归档)
@@ -297,6 +295,7 @@ research-wechat-visibility.md       冷启动策略研究
 | **SK知识库** | D:\sk | 操作系统（本仓库） |
 | **三湘问道理论库** | E:\sanxiangwendao | 弹药库（90+篇理论文档） |
 | **CET理论库** | E:\CEET | 认知内共生理论（与30篇规划关联） |
+| **SKGPT 配置仓库** | github.com/MRYGP/SKGPT | ChatGPT Project / GPTS 指令、上传清单、GitHub 现读协议 |
 | **GitHub同步** | github.com/MRYGP/SK | 远程备份（实习生通过此访问全部文件） |
 
 ---

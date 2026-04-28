@@ -2,6 +2,18 @@
 
 ---
 
+### 2026-04-28 · 清理 Project/GPTS 配置文件残留引用
+
+- 删除并不再维护 `SK工作台-项目文件上传策略.md`
+- 删除并不再维护 `SK-GPTS与ChatGPT项目搭建方案.md`
+- ChatGPT Project / GPTS 配置统一迁移到 `MRYGP/SKGPT`
+- Project Instructions 正式文件：`MRYGP/SKGPT/instructions/chatgpt-project-instructions.md`
+- Project 上传清单正式文件：`MRYGP/SKGPT/knowledge/upload-manifest.md`
+- GitHub 现读协议正式文件：`MRYGP/SKGPT/protocols/github-read-protocol.md`
+- `MRYGP/SK` 只保留内容、案例、方法论正文、执行状态、雷达状态，不再承载 Project/GPTS 专用配置
+
+---
+
 ## 2026-04-28
 
 - 同步 012/013 已发布状态
@@ -13,6 +25,8 @@
 ---
 
 ## 2026-04-28 · 第二十三次更新 · 新增 ChatGPT Project 文件上传策略
+
+> 说明（后续口径）：本条为历史记录；相关配置已迁移到 `MRYGP/SKGPT`，`MRYGP/SK` 不再维护 Project/GPTS 专用配置文件。
 
 **触发事件:** 需要为 `SK 工作台｜三湘问道 SSOT` 与 `SK-GPTS` 建立统一的文件上传与状态读取规范，避免将项目上传区误当作 SSOT。
 
@@ -30,6 +44,11 @@
 **同步更新:**
 - `README.md`：meta 文件夹索引新增 `SK工作台-项目文件上传策略.md`；AI快速调用入口新增“做 ChatGPT Project / GPTS 文件配置”
 - 口径统一：`README / ops / case-index / case-cards` 不再建议长期上传到 ChatGPT Project（动态信息按 GitHub 现读）
+
+**现行正式入口（迁移后）:**
+- `MRYGP/SKGPT/instructions/chatgpt-project-instructions.md`
+- `MRYGP/SKGPT/knowledge/upload-manifest.md`
+- `MRYGP/SKGPT/protocols/github-read-protocol.md`
 
 ---
 
