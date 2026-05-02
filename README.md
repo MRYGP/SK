@@ -117,6 +117,8 @@
 | **深度研究员** | 多AI轮换 | `meta/gpts-deep-researcher-design.md` |
 | **产品雷达扫描** | 已废弃 | 2026-04-26 雷达轻量化,见 radar/product-radar.md 顶部说明 |
 
+> **SK-产品对标初拆 GPTS**：用于 38 产品初拆底稿生成；正式配置维护在 `MRYGP/SKGPT`，不在 SK 主仓库维护。
+
 日常工作流：思考Project出底稿 → 写作工坊改写 → 第一读者检测 → 发布
 
 ---
