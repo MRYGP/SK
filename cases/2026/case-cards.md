@@ -473,7 +473,7 @@ source_quality: "A+B"
 teardown_date: "2026-04-14"
 teardown_depth: "完整10维度+推演流水账"
 depth_draft: "cases/2026/深度底稿/011-MYHAIRAI-拆解底稿.md"
-inference_log: "cases/2026/推演流水账-MYHAIRAI中国版-2026-04-14.md"
+inference_log: "cases/2026/推演流水账/推演流水账-MYHAIRAI中国版-2026-04-14.md"
 article_file: "cases/2026/011-MYHAIRAI-脱发诊断市场最大的生意.md"
 article_published: "待写"
 ```
