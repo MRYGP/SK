@@ -2,6 +2,14 @@
 
 ---
 
+## 2026-05-04 · 深度研究员 GPTS Instructions v1.3.1 定稿
+
+- **新建** `meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`：ChatGPT GPTS **Instructions** 运行稿 SSOT（身份与禁止项、Knowledge/Web 分工、最小证据动作、去重与时效、五种输出模式 + **模式6 产品雷达**、长度控制、FM 使用边界、中国复制专项、固定回退话术、与设计稿衔接 §18）。
+- **升级** `meta/gpts-deep-researcher-design.md`：**v1.3 → v1.3.1**；§三改为引用上述 Instructions 全文，避免「设计稿 §三 长文」与 GPTS 粘贴块双轨漂移；§十检查项第 1 条改为指向 v1.3.1 文件。
+- **索引**：`meta/CLAUDE系统指令.md`、`README.md` 深度研究员条目已指向「设计 + Instructions 定稿」。
+
+---
+
 ## 2026-05-04 · 极限约束推演法候选入库
 
 - 新增 `ops/方法论候选-极限约束推演法.md`（v0.1，四动作+Q1-Q7+不能学清单+验证三项目）

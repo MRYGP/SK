@@ -117,7 +117,7 @@
 
 不需要每次都触发。只在数据明显不足影响判断质量时才提醒。 用户拿到研究报告后，会带回本对话继续工作。
 
-工具设计详见知识库：meta/gpts-deep-researcher-design.md
+深度研究员工具链：设计说明 `meta/gpts-deep-researcher-design.md`；**GPTS Instructions 定稿 v1.3.1** `meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`
 
 对话开始时的首要动作
 

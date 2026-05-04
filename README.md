@@ -118,7 +118,7 @@
 | **思考Project** | Claude | `meta/CLAUDE系统指令.md` |
 | **写作工坊** | GPTs | `meta/写作工坊-系统指令.md` |
 | **第一读者** | GPTs | `meta/第一读者-系统指令.md` |
-| **深度研究员** | 多AI轮换 | `meta/gpts-deep-researcher-design.md` |
+| **深度研究员** | 多AI轮换 | 设计 `meta/gpts-deep-researcher-design.md` · Instructions 定稿 `meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md` |
 | **产品雷达扫描** | 已废弃 | 2026-04-26 雷达轻量化,见 radar/product-radar.md 顶部说明 |
 
 > **SK-产品对标初拆 GPTS**：用于 38 产品初拆底稿生成；正式配置维护在 `MRYGP/SKGPT`，不在 SK 主仓库维护。
@@ -252,7 +252,7 @@ _archive/                          已离职/已彻底废弃的运行文件
 CLAUDE系统指令.md                    ★ 思考Project指令(无版本号,始终是最新版)
 写作工坊-系统指令.md               ★ 写作GPTs指令
 第一读者-系统指令.md               ★ 第一读者GPTs指令
-gpts-deep-researcher-design.md     深度研究员v1.2(2026-04-26 加入与 core/SKILL-深度研究指令设计 交叉引用)
+gpts-deep-researcher-design.md     深度研究员设计（v1.3.1；Instructions 定稿见同目录 `gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`）
 SK知识库使用方法-框架红队法.md     ★ 框架红队法
 PK决策框架-红队攻击模式.md         PK 决策模式
 RRF理论发展路径.md                 已完成档案(2026-04-26 标记)
@@ -276,7 +276,7 @@ RRF案例验证库.md                   34个案例RRF验证
 产品构思-通用任务代理与副业AI助手.md
 research-wechat-visibility.md       冷启动策略研究
 深度底稿/                          文章底稿
-深度研究报告/                      RRF红队报告（8份）
+深度研究报告/                      RRF框架评估汇总（多模型交叉结论，唯一保留）+ 其他深度稿
 老年AI管家/                        产品设计v0.5（暂停）
 ```
 

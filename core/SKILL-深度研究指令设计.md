@@ -2,7 +2,7 @@
 
 > 版本:v0.1(2026-04-25 初稿,由「AI 微任务引擎」研究跑完之后沉淀)
 
-> 🔗 **关联工具**——本 SKILL 是方法论。具体的 ChatGPT GPTs 实例设计见 `meta/gpts-deep-researcher-design.md`。设计或修订 GPTs 时应先读本 SKILL。
+> 🔗 **关联工具**——本 SKILL 是方法论。ChatGPT GPTs **设计说明**见 `meta/gpts-deep-researcher-design.md`；**Instructions 定稿 v1.3.1**见 `meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`。设计或修订 GPTs 时应先读本 SKILL，再同步上述两文件。
 > 适用场景:需要喂多个 AI 跑研究、再筛选模式/方向/对标的场合
 > 预计时长:指令设计 30-60 分钟 / 多 AI 跑 1-2 天 / 跑回来分析 90 分钟
 > 输出物:① 研究指令(对外);② 多 AI 报告对比表;③ 筛选结论 + 盲区清单
