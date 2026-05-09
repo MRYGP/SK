@@ -1,0 +1,74 @@
+2026-05-06 14:44:38,073 - ERROR - ❌ MINIMAX_API_KEY 未配置，请检查.env文件
+2026-05-06 14:46:28,957 - INFO - ✅ OpenAI客户端初始化成功
+2026-05-06 14:46:28,964 - INFO - ✅ 提示词加载成功，长度: 876 字符
+2026-05-06 14:46:28,964 - INFO - 🚀 Agent启动成功，监控中...
+2026-05-06 14:46:28,965 - INFO - 📁 监控目录: C:\Users\ChengXingYu\Desktop\01_Working\SK\cases\2026
+2026-05-06 14:46:28,965 - INFO - 📁 输出目录: C:\Users\ChengXingYu\Desktop\01_Working\SK\articles\2026
+2026-05-06 14:46:28,967 - INFO - ✅ 监控器启动成功
+2026-05-06 17:04:27,914 - INFO - ✅ OpenAI客户端初始化成功
+2026-05-06 17:04:27,915 - INFO - ✅ 提示词加载成功，长度: 876 字符
+2026-05-06 17:04:29,542 - INFO - HTTP Request: POST https://api.minimax.chat/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-06 18:25:45,495 - ERROR - ❌ 客户端初始化失败: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-05-06 18:25:54,576 - ERROR - ❌ 客户端初始化失败: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-05-06 18:26:00,431 - ERROR - ❌ 客户端初始化失败: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-05-06 18:31:48,002 - INFO - 
+✅ 检测到新文件：TEST-FILE.md
+2026-05-06 18:31:48,505 - INFO - ✅ 文件读取成功，长度: 0 字符
+2026-05-06 18:31:48,505 - WARNING - ⚠️ 文件内容为空: TEST-FILE.md
+2026-05-06 18:32:41,712 - INFO - ✅ OpenAI客户端初始化成功
+2026-05-06 18:32:41,713 - INFO - ✅ 提示词加载成功，长度: 876 字符
+2026-05-06 18:32:41,715 - INFO - 
+✅ 检测到新文件：AUTO-TEST.md
+2026-05-06 18:32:41,715 - INFO - 
+✅ 检测到新文件：AUTO-TEST.md
+2026-05-06 18:32:42,222 - INFO - ✅ 文件读取成功，长度: 71 字符
+2026-05-06 18:32:42,222 - INFO - ✅ 文件读取成功，长度: 71 字符
+2026-05-06 18:32:42,222 - INFO - 🔄 生成文章中...
+2026-05-06 18:32:42,222 - INFO - 🔄 生成文章中...
+2026-05-06 18:32:43,094 - INFO - HTTP Request: POST https://api.minimax.chat/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-06 18:32:43,095 - ERROR - ❌ API调用错误: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax-turbo' (2013)", 'http_code': '400'}, 'request_id': '064a4bcb6256d414a2c6d73e8eda4bfc'}
+2026-05-06 18:32:59,199 - INFO - HTTP Request: POST https://api.minimax.chat/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:32:59,206 - INFO - ✅ LLM响应成功，文章长度: 1010 字符
+2026-05-06 18:32:59,207 - INFO - ✅ 文章完成：C:\Users\ChengXingYu\Desktop\01_Working\SK\articles\2026\Article_AUTO-TEST.md
+2026-05-07 11:20:48,589 - INFO - ✅ 保留系统代理配置
+2026-05-07 11:20:48,826 - INFO - ✅ OpenAI客户端初始化成功
+2026-05-07 11:20:48,827 - INFO - ✅ 提示词加载成功，长度: 876 字符
+2026-05-07 11:20:48,828 - INFO - ============================================================
+2026-05-07 11:20:48,828 - INFO - 🚀 Agent启动成功，监控中...
+2026-05-07 11:20:48,828 - INFO - 📁 监控目录: c:\Users\ChengXingYu\Desktop\01_Working\SK\cases\2026
+2026-05-07 11:20:48,828 - INFO - 📁 输出目录: c:\Users\ChengXingYu\Desktop\01_Working\SK\articles\2026
+2026-05-07 11:20:48,829 - INFO - ⚙️  LLM模型: MiniMax-M2.7
+2026-05-07 11:20:48,829 - INFO - ⚙️  并发控制: 最多 3 个任务
+2026-05-07 11:20:48,829 - INFO - ⚙️  API超时: 60.0秒
+2026-05-07 11:20:48,829 - INFO - ⚙️  最大重试: 3次
+2026-05-07 11:20:48,829 - INFO - ============================================================
+2026-05-07 11:20:48,831 - INFO - ✅ 监控器启动成功
+2026-05-07 11:24:07,673 - INFO - ✅ 保留系统代理配置
+2026-05-07 11:24:07,955 - INFO - ✅ OpenAI客户端初始化成功
+2026-05-07 11:24:07,956 - INFO - ✅ 提示词加载成功，长度: 876 字符
+2026-05-07 11:24:07,958 - INFO - 
+✅ 检测到新文件：CASE-002.md
+2026-05-07 11:24:08,259 - INFO - ✅ 文件读取成功，长度: 423 字符
+2026-05-07 11:24:08,260 - INFO - 🔄 生成文章中...
+2026-05-07 11:25:09,322 - INFO - Retrying request to /chat/completions in 0.447961 seconds
+2026-05-07 11:26:10,195 - INFO - Retrying request to /chat/completions in 0.968480 seconds
+2026-05-07 11:27:11,430 - WARNING - ⚠️ API连接失败，1.0秒后重试 (1/3)
+2026-05-07 11:28:12,573 - INFO - Retrying request to /chat/completions in 0.410986 seconds
+2026-05-07 11:28:58,116 - INFO - HTTP Request: POST https://api.minimax.chat/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-07 11:28:58,122 - INFO - ✅ LLM响应成功，文章长度: 2482 字符
+2026-05-07 11:28:58,123 - INFO - ✅ 文章完成：C:\Users\ChengXingYu\Desktop\01_Working\SK\articles\2026\Article_CASE-002_2.md
+2026-05-07 11:29:47,620 - INFO - ✅ 保留系统代理配置
+2026-05-07 11:29:47,843 - INFO - ✅ OpenAI客户端初始化成功
+2026-05-07 11:29:47,845 - INFO - ✅ 提示词加载成功，长度: 876 字符
+2026-05-07 14:21:28,492 - INFO - 
+✅ 检测到新文件：MTP-考公面试AI练习室-构思招募文.md
+2026-05-07 14:21:28,795 - INFO - ✅ 文件读取成功，长度: 4727 字符
+2026-05-07 14:21:28,796 - INFO - 🔄 生成文章中...
+2026-05-07 14:21:37,578 - INFO - ✅ 保留系统代理配置
+2026-05-07 14:21:37,579 - ERROR - ❌ 客户端初始化失败: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-05-07 14:22:29,654 - INFO - Retrying request to /chat/completions in 0.390006 seconds
+2026-05-07 14:23:30,489 - INFO - Retrying request to /chat/completions in 0.827672 seconds
+2026-05-07 14:24:31,575 - WARNING - ⚠️ API连接失败，1.0秒后重试 (1/3)
+2026-05-07 14:25:25,465 - INFO - HTTP Request: POST https://api.minimax.chat/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-07 14:25:25,475 - INFO - ✅ LLM响应成功，文章长度: 3822 字符
+2026-05-07 14:25:25,476 - INFO - ✅ 文章完成：c:\Users\ChengXingYu\Desktop\01_Working\SK\articles\2026\Article_MTP-考公面试AI练习室-构思招募文.md
