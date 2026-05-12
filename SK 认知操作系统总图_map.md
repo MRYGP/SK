@@ -468,7 +468,7 @@ SK 是：
 
 对应：
 
-- SK GPTS（深度研究员，v1.3.1 定稿）
+- SK GPTS（深度研究员，Instructions 定稿 `gpts-deep-researcher-GPTs-Instructions.md` v1.4）
 - Claude Projects
 - Hermes
 - 工作流

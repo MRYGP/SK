@@ -5,7 +5,7 @@
 
 > 用途：产品拆解、文章写作、资料收集、赛道判断、产品雷达扫描中的深度研究工具
 > 设计者：changshayang + Claude
-> 日期：2026-05-04（**设计方案 v1.3.1**：GPTS **Instructions 定稿**见 `meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`；本文保留触发器、模式说明、仓库关系与同步检查清单。）
+> 日期：2026-05-12（**设计方案 v1.4**：GPTS **Instructions 定稿**见 `meta/gpts-deep-researcher-GPTs-Instructions.md`（§19 研究偏差自警与反向扫描）；本文保留触发器、模式说明、仓库关系与同步检查清单。）
 > 配套：在ChatGPT中创建GPTs，用于需要大规模信息收集和验证的场景
 
 ---
@@ -92,12 +92,12 @@
 
 ## 三、系统提示词（GPTs Instructions）
 
-**定稿：v1.3.1** — 完整运行稿见 **`meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`**。
+**定稿：v1.4** — 完整运行稿见 **`meta/gpts-deep-researcher-GPTs-Instructions.md`**。
 
 - **创建 / 更新 ChatGPT GPTS 时**：将该文件**全文**复制到 GPTS「Instructions」（若受长度限制，优先保留其 §0–§10、§16–§18；其余不得删减原则性禁止项）。
 - **Knowledge** 仍为下文 **§四** 所列 4 个文件；**何时必须做深度研究、主动触发**仍以本文 **§二** 为准；**模式 1–6 的输入范例与雷达边界**仍以本文 **§五** 为准（Instructions §11 与 §18 已对齐要点，避免双份全文漂移）。
 
-本节不再重复粘贴旧版系统提示词全文；历史摘要已并入 v1.3.1 运行稿。
+本节不再重复粘贴旧版系统提示词全文；历史摘要已并入 `gpts-deep-researcher-GPTs-Instructions.md`（当前 v1.4）运行稿。
 
 ---
 
@@ -292,7 +292,7 @@
 
 需要手动检查并同步：
 
-1. GPTS Instructions 是否已同步为 **`meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md` 全文**（定稿 v1.3.1）
+1. GPTS Instructions 是否已同步为 **`meta/gpts-deep-researcher-GPTs-Instructions.md` 全文**（定稿 v1.4）
 2. GPTS Knowledge 是否仍为 4 个 SK 当前文件：
    - `core/研究员输出模板.md`
    - `core/failure_modes.yml`
@@ -306,4 +306,4 @@
 
 ---
 
-*本设计方案 v1.3.1（2026-05-04：①**GPTS Instructions 定稿**独立为 `meta/gpts-deep-researcher-GPTs-Instructions-v1.3.1.md`（最小证据动作、去重、输出模式与长度、中国复制专项、固定回退话术等）；②本文 §三 改为引用运行稿，避免与设计稿双份全文漂移；③继承 v1.3：三仓库体系、边界补强、旧雷达 weekly/实习生B 降级，当前雷达状态以 MRYGP/SK 当前文件为准。）*
+*本设计方案 v1.4（2026-05-12：①**GPTS Instructions 定稿**文件更名为 `meta/gpts-deep-researcher-GPTs-Instructions.md`，版本 v1.4，新增 **§19 研究偏差自警与反向扫描**（评分判别力声明、嵌入入口可用性、中国机会三层扫描含小作坊层、招募 vs 现状能力、多 AI 对比反向解读）；②§十 同步检查清单指向新文件名；③v1.3.1 及此前条目仍见 Git 历史。）*
