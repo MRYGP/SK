@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>头发产品 · MVP线框 + 5/16行动手册</title>
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #666;
+      --accent: #c45c26;
+      --accent-soft: #fff4ee;
+      --border: #e8e4df;
+      --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 16px;
+      padding-bottom: 5rem;
+    }
+  .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .top-bar h1 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .nav { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .nav a {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.55rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding: 0.75rem 1rem 0;
+    }
+    main { padding: 0.75rem 1rem 2rem; max-width: 42rem; margin: 0 auto; }
+    section { margin-bottom: 1.5rem; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.25rem 0 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    h3 { font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--accent); }
+    h4 { font-size: 0.9rem; margin: 0.75rem 0 0.35rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .card p { margin: 0.35rem 0; font-size: 0.92rem; }
+    .card strong { color: var(--accent); }
+    pre.wire {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      line-height: 1.35;
+      background: #f3f1ee;
+      border-radius: 8px;
+      padding: 0.65rem;
+      overflow-x: auto;
+      white-space: pre;
+      margin: 0.5rem 0;
+    }
+    .flow {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      background: var(--accent-soft);
+      padding: 0.65rem;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+    ul { padding-left: 1.2rem; margin: 0.35rem 0; font-size: 0.92rem; }
+    li { margin: 0.25rem 0; }
+    blockquote.script {
+      border-left: 3px solid var(--accent);
+      padding: 0.5rem 0.75rem;
+      margin: 0.5rem 0;
+      background: var(--accent-soft);
+      font-size: 0.92rem;
+      border-radius: 0 8px 8px 0;
+    }
+    table.schedule {
+      width: 100%;
+      font-size: 0.85rem;
+      border-collapse: collapse;
+      margin: 0.5rem 0;
+    }
+    table.schedule td, table.schedule th {
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.5rem;
+      vertical-align: top;
+    }
+    table.schedule th { background: #f3f1ee; text-align: left; width: 28%; }
+    table.moments { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
+    table.moments th, table.moments td {
+      border: 1px solid var(--border);
+      padding: 0.4rem;
+      vertical-align: top;
+    }
+    table.moments th { background: #f3f1ee; }
+    .tag { display: inline-block; font-size: 0.7rem; background: #eee; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 0.25rem; }
+    .template {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      background: #f3f1ee;
+      padding: 0.75rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+    .pill-core { background: var(--accent); color: #fff; font-size: 0.65rem; padding: 0.1rem 0.35rem; border-radius: 4px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+<div style="background: #FFE0E0; border: 2px solid #CC0000; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+<h2 style="color: #CC0000; margin-top: 0;">🚨 本文件已于 2026-05-16 废止</h2>
+<p>本文件的 6 页线框图(化身管理 + 多轮对话 + 跳转购买)+ 5/16 访谈话术(消费者为主),是"独立产品拉新用户"路径的具体落地。</p>
+<p>5/16 下午铁律 19 入库后,真正第一代 MVP 大幅简化:<strong>用户即时拍照 → 看自己戴假发的效果 → 没了</strong>。访谈对象从消费者改为<strong>假发卖家</strong>。</p>
+<p>真正主线在 <strong>07-5月16修订-从产品设计到卡点扫描.md</strong>。</p>
+<p>本文件保留作对照样本,不要按此执行。</p>
+</div>
+  <header class="top-bar">
+    <h1>头发产品 · 5/16 随身手册</h1>
+    <nav class="nav">
+      <a href="#flow">导航</a>
+      <a href="#p1">页1</a>
+      <a href="#p2">页2</a>
+      <a href="#p3">页3</a>
+      <a href="#p4">页4</a>
+      <a href="#p5">页5</a>
+      <a href="#p6">页6</a>
+      <a href="#moments">4瞬间</a>
+      <a href="#schedule">日程</a>
+      <a href="#open">开场</a>
+      <a href="#q1">Q1</a>
+      <a href="#q2">Q2</a>
+      <a href="#q3">Q3</a>
+      <a href="#q4">Q4</a>
+      <a href="#q5">Q5</a>
+      <a href="#q6">Q6</a>
+      <a href="#q7">Q7</a>
+      <a href="#shop">商家</a>
+      <a href="#review">复盘</a>
+    </nav>
+  </header>
+  <p class="meta">v0.1 · 2026-05-15 深夜 · 访谈时打开本页</p>
+
+  <main>
+    <section id="flow">
+      <h2>整体导航 <span class="pill-core">6页</span></h2>
+      <div class="flow">[首页] → [创建化身] → [脱敏完成] → [选择场景] → [多轮试戴·核心] → [效果对比] → 外跳商家</div>
+      <p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">每页:用户 5 秒内知道下一步点哪里</p>
+    </section>
+
+    <section id="p1">
+      <h2>页面 1 · 首页</h2>
+      <div class="card">
+        <p><strong>标题</strong> 无栏,Hero 文案</p>
+        <p><strong>主 CTA</strong> 「开始试戴 →」→ 页2</p>
+        <pre class="wire">头发,自己说了算
+私密、慢慢试、不被打扰
+[示意图:剪影+假发样]
+[开始试戴 →]
+已经有 X 人在试
+─ 简单 3 步 ─
+1. 上传(只取脸型,原图立刻删)
+2. 和 AI 说想要的样子
+3. 满意了再决定买
+你的所有数据都在你手机里</pre>
+        <p><strong>意图</strong> 不说 AI/科技;「原图立刻删」前置;只有体验描述无功能介绍</p>
+      </div>
+    </section>
+
+    <section id="p2">
+      <h2>页面 2 · 上传照片</h2>
+      <div class="card">
+        <p><strong>标题</strong> 第 1 步 / 共 3 步 · 上传一张你的照片</p>
+        <p>不说「创建化身」; 脱敏说明<strong>默认展开</strong>; ✓ 列表扫读 5 秒; 「我同意」单选框后才亮「下一步」</p>
+        <ul>
+          <li>只提取脸型肤色五官(脱敏特征)</li>
+          <li>原图立刻从服务器删除</li>
+          <li>不保存脸 / 不发任何地方</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="p3">
+      <h2>页面 3 · 脱敏完成</h2>
+      <div class="card">
+        <p>过渡 2-3 秒自动进页4</p>
+        <p><strong>✓ 已提取脸型特征 · 原始照片已删除 · 正在准备试戴</strong></p>
+        <p><strong>意图</strong> 故意停 2-3 秒让用户读到「已删除」——<strong>不要省略</strong></p>
+      </div>
+    </section>
+
+    <section id="p4">
+      <h2>页面 4 · 选场景</h2>
+      <div class="card">
+        <p>第 2 步 · 4 卡片(文字非图): 自然款(像没戴) / 时尚 / 庄重 / 个性</p>
+        <p>或输入框 placeholder:「中长发,自然一点,不要太引人注目」</p>
+        <p><strong>CTA</strong> 开始试戴 → 页5</p>
+      </div>
+    </section>
+
+    <section id="p5">
+      <h2>页面 5 · 多轮试戴 <span class="pill-core">核心</span></h2>
+      <div class="card">
+        <p>上 60% 化身+3款缩略图; 下 40% 对话+输入+快捷词</p>
+        <p>AI 开场总结用户上一步:「基于你说的中长发自然款,准备了3款…」</p>
+        <p>快捷: #再短一点 #颜色深点 #换个刘海 <strong>#这个就好</strong>(高亮→页6)</p>
+        <p><strong>意图</strong> 出口是「这个就好」不是「购买」</p>
+      </div>
+    </section>
+
+    <section id="p6">
+      <h2>页面 6 · 你的选择</h2>
+      <div class="card">
+        <p>信息: 品牌 / 材质 / 适合 / 价格</p>
+        <p><strong>主 CTA</strong> 「去看实物」→ 外跳商家(抽佣)</p>
+        <p>次 CTA 「再试试其他款」→ 回页5</p>
+        <p>底部: 你的化身已保存,下次还可以接着试</p>
+      </div>
+    </section>
+
+    <section id="moments">
+      <h2>4 个关键决策瞬间</h2>
+      <table class="moments">
+        <tr><th>瞬间</th><th>用户决定</th><th>关键</th></tr>
+        <tr><td>1→2</td><td>开始试一下</td><td>降低压力文案</td></tr>
+        <tr><td>页2上传</td><td>愿不愿上传脸</td><td>脱敏说明</td></tr>
+        <tr><td>页5对话</td><td>有不有趣</td><td>AI 第一回应</td></tr>
+        <tr><td>页6跳转</td><td>要不要看实物</td><td>CTA「去看实物」</td></tr>
+      </table>
+      <p style="margin-top:0.5rem;font-size:0.9rem"><strong>任一断掉,产品就死。</strong></p>
+    </section>
+
+    <section id="schedule">
+      <h2>5/16 日程</h2>
+      <table class="schedule">
+        <tr><th>8:30-9:00</th><td>看 04 提纲,手机备好</td></tr>
+        <tr><th>9:00-9:30</th><td>第1通用户(练手)</td></tr>
+        <tr><th>9:30-9:45</th><td>写3条最意外反馈</td></tr>
+        <tr><th>9:45-10:30</th><td>第2-3通用户</td></tr>
+        <tr><th>10:30-11:00</th><td>复盘调问法</td></tr>
+        <tr><th>11:00-12:00</th><td>联系2家商家</td></tr>
+        <tr><th>14:00-17:00</th><td>第4-7通+商家</td></tr>
+        <tr><th>17:00-18:00</th><td>200字复盘</td></tr>
+        <tr><th>晚上</th><td>不工作;忍住推第二代</td></tr>
+      </table>
+    </section>
+
+    <section id="open">
+      <h2>用户开场白(50字)</h2>
+      <blockquote class="script">你好 X,我打电话不是推销什么。我在研究脱发用户买假发时的真实困难,你之前提过 X(具体细节),想问你 20-30 分钟。你说真实感受就行,不需要给答案。方便吗?</blockquote>
+      <ul>
+        <li>不是推销 → 在研究不是做产品 → 引用细节 → 限时+不需给答案 → 方便吗</li>
+      </ul>
+    </section>
+
+    <section id="q1"><h2>Q1 脱发多久/戴过假发?</h2>
+      <div class="card"><ul>
+        <li>「X年」→ 第一次意识到是问题?</li>
+        <li>「戴过」→ 第一次场合?感觉?</li>
+        <li>「没戴」→ 考虑过?什么没试?</li>
+      </ul><p><em>目标:还原真实路径,非总结</em></p></div>
+    </section>
+
+    <section id="q2"><h2>Q2 最大障碍?</h2>
+      <div class="card"><p><strong>不要给选项!</strong></p><ul>
+        <li>怕被认出 → 具体场合?谁?</li>
+        <li>不知选款 → 怎么放弃的?</li>
+        <li>贵 → 多少不能接受?多少能咬牙?</li>
+      </ul><p><em>目标:抽象→具体场景</em></p></div>
+    </section>
+
+    <section id="q3"><h2>Q3 去过假发店?</h2>
+      <div class="card"><ul>
+        <li>去过 → 一个人还是有人陪?</li>
+        <li>试过 → 几款?买了吗?哪刻不买?</li>
+        <li>没去过 → 什么停下了?</li>
+      </ul><p><em>目标:验证羞耻感</em></p></div>
+    </section>
+
+    <section id="q4"><h2>Q4 在家私密试戴 APP?</h2>
+      <div class="card"><p>不卖产品</p><ul>
+        <li>愿意 → 什么样的你会愿意?</li>
+        <li>不愿意 → 为什么?</li>
+        <li>要看 → 先看什么才试?</li>
+      </ul><p><em>目标:什么条件下愿意</em></p></div>
+    </section>
+
+    <section id="q5"><h2>Q5 上传照片/脱敏特征?</h2>
+      <div class="card"><p>先问照片,再问脱敏,看态度变没变</p>
+      <p>全不愿意 → 「用假人代替,只是参考,愿意吗?」</p>
+      <p><em>目标:脱敏无效则改模特库匹配</em></p></div>
+    </section>
+
+    <section id="q6"><h2>Q6 愿意花多少钱?</h2>
+      <div class="card"><p>报价后 → 为什么这数?之前看过什么价?</p>
+      <p><em>目标:价格锚定,不为产品定价</em></p></div>
+    </section>
+
+    <section id="q7"><h2>Q7 会推荐朋友?</h2>
+      <div class="card"><ul>
+        <li>会 → 推荐给谁?他们也有问题?</li>
+        <li>不会 → 为什么?</li>
+        <li><strong>锋利:</strong> 效果很好时,想让身边谁先知道?</li>
+      </ul></div>
+    </section>
+
+    <section id="shop">
+      <h2>商家 · 开场 + 6问</h2>
+      <blockquote class="script">您好,我是[名字],注意到您家(具体细节)。研究消费者怎么决策买假发,花15分钟请教,不卖东西。可发消费者洞察小结作回报。方便吗?</blockquote>
+      <div class="card"><ol style="padding-left:1.2rem;font-size:0.9rem">
+        <li>月销?客单价分布?</li>
+        <li>退货率?最头疼原因?</li>
+        <li>现在怎么处理?客服/描述/模特图?</li>
+        <li>AI试戴能解决退货吗?(别预设能)</li>
+        <li>月费999-2999 vs 分成8-15%?</li>
+        <li>免费30天试用愿意吗?</li>
+      </ol>
+      <p style="margin-top:0.5rem"><em>听反对意见;抽象→具体场景</em></p></div>
+    </section>
+
+    <section id="review">
+      <h2>17:00 复盘模板(≤200字)</h2>
+      <div class="template">日期:5/16
+
+【今天打了 X 通电话】
+- 用户:X 通
+- 商家:X 通
+
+【最意外的一句话】
+[原文复述]
+
+【3个关键假设更新】
+- 假设1(私密化身有用): X% → X%
+- 假设2(愿意脱敏上传): X% → X%
+- 假设3(商家愿意接入): X% → X%
+
+【明天调整】
+[1-2件具体事]</div>
+    </section>
+  </main>
+</body>
+</html>
