@@ -1,10 +1,12 @@
-> 版本:v0.1 · 2026-05-19
-> 用途:ChatGPT Project「SK｜头发 AI 产品推进台」的项目入口文件
-> 性质:执行入口,不替代本目录 README,不替代 GitHub 当前状态现读
+> 版本:v0.2 · 2026-05-24
+> 用途:ChatGPT Project「戴一下·假发 AI 试戴」的项目入口文件(SK 留痕副本)
+> 性质:执行入口已迁至 daiyixia;本文件为 SK 目录留痕,不替代 GitHub 当前状态现读
+>
+> ⚠️ **已迁移** · 执行真源:`github.com/MRYGP/daiyixia`(本地 `D:\daiyixia`)。**当前阶段、日期、Project 配置以 daiyixia 为准。** 最新入口:`daiyixia/PROJECT-README.md` · Instructions:`daiyixia/系统指令/GPT-Project-Instructions.md`
 
 ---
 
-# SK｜头发 AI 产品推进台 · Project README
+# 戴一下·假发 AI 试戴 · Project README
 
 ## 一、当前主线
 
@@ -26,7 +28,7 @@ AI 假发 / 头发试戴转化工具。
 
 ## 二、当前阶段
 
-**Demo + 业内访谈前夜**。
+**第一阶段：试戴图做像 + 嵌入卖家漏斗 + 验证降退货**。
 
 **当前唯一问题**:
 
@@ -64,8 +66,8 @@ AI 假发 / 头发试戴转化工具。
 3. `10-5月17-小王技术Demo任务书.md`
 4. `11-5月17-4份GPT深度研究交叉验证与方向再调整.md`
 5. `Sk 头发ai试戴 可行性与商业计划书 v0.1.md`
-6. `12-5月18-Demo成功后的两个根系.md`(仅作 5/22 后回看)
-7. `13-5月18晚-两根系验证与推动路径.md`(仅作 5/22 后回看)
+6. `12-5月18-Demo成功后的两个根系.md`(仅作 5/26 后回看)
+7. `13-5月18晚-两根系验证与推动路径.md`(仅作 5/26 后回看)
 
 ---
 
@@ -82,7 +84,7 @@ AI 假发 / 头发试戴转化工具。
 
 ---
 
-## 七、5/22 后回看标准
+## 七、5/26 后回看标准
 
 **如果 Demo 跑通 + 业内人士认可**:
 
@@ -103,7 +105,8 @@ AI 假发 / 头发试戴转化工具。
 
 本 Project 的完整配置(Instructions / 上传清单 / 维护规则)在:
 
-`MRYGP/SKGPT/projects/头发AI产品推进台.md`
+- **当前(戴一下)**: `MRYGP/daiyixia` · `系统指令/GPT-Project-Instructions.md` · `系统指令/GPT-Project配置-原始备份.md`
+- **历史(SK 时期)**: `MRYGP/SKGPT/projects/头发AI产品推进台.md`(已弃用,仅留痕)
 
 ---
 
