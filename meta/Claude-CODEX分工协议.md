@@ -1,7 +1,7 @@
 # Claude / CODEX 分工协议
 
 > 版本：v1.0 · 2026-05-28
-> 适用：SK 仓库（D:\sk）三方协作 —— 杨 + Claude（Desktop+Filesystem）+ CODEX
+> 适用：SK 仓库三方协作 —— 杨 + Claude（Desktop+Filesystem）+ CODEX
 > 关联文件：`AGENTS.md`（CODEX 宪法）、`meta/CLAUDE系统指令.md`（Claude 宪法）
 
 ---
@@ -79,7 +79,7 @@ CODEX 管「物理正确性」，Claude 管「认知正确性」，杨当信使 
 
 | 风险 | 防护 |
 |------|------|
-| 两个 agent 都能写 D:\sk | 文件类型分线 + commit 边界隔离 |
+| 两个 agent 都能写同一工作区 | 文件类型分线 + commit 边界隔离 |
 | CODEX 守"只改本次触发的" → 必然留同步缺口 | Claude 当影响链翻译官，主动产同步工单 |
 | ChatGPT Project 不会自动同步 GitHub | 改完 SKGPT 仍需手动上传，CODEX 必须提醒 |
 | Claude 在长对话中可能漂移 | CODEX 每次重读仓库 → 重大判断让 CODEX 复核物理事实 |
