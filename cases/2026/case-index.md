@@ -55,7 +55,7 @@
 | 文和友 | ✅ 完整（失败案例参考卡） | case-cards.md（CASE-REF-WHF） |
 | 熊猫不走 | ✅ 完整（失败案例参考卡） | case-cards.md（CASE-REF-PandaCake） |
 | CASE-011 MYHAIRAI | 卡片已存在；卡内字段已与已发 011 对齐复核（见 2026-05-04 对账） | case-cards.md（CASE-011） |
-| CASE-012 Cactus | 卡片已存在；待与 **017** 正式文章进度对齐 | case-cards.md（CASE-012） |
+| CASE-012 Cactus | 卡片已存在；已与 **017** 已发布状态对齐（2026-07-05 复核） | case-cards.md（CASE-012） |
 | CASE-013 Spangle | 卡片已存在；待与 **018** 正式文章进度对齐 | case-cards.md（CASE-013） |
 | CASE-014 糖尿病前期（文卡） | 卡片已存在（轻量文卡）；理论引用与推演 B 校验待复核 | case-cards.md（CASE-014） |
 | CASE-Supermemory（多AI研究卡，不占文章编号） | 卡片已存在（5份研究报告汇总；四路决策=观察） | case-cards.md（CASE-Supermemory） |
