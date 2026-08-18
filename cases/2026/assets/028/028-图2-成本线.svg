@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="340" viewBox="0 0 680 340" font-family="'Microsoft YaHei','PingFang SC','Source Han Sans SC','Noto Sans CJK SC',sans-serif">
+<rect x="0" y="0" width="680" height="340" fill="#FFFFFF"/>
+
+<text x="100" y="38" font-size="16" fill="#73726C">每单「找到合格受访者」的成本</text>
+
+<line x1="100" y1="60" x2="100" y2="270" stroke="#B4B2A9" stroke-width="0.5"/>
+<line x1="100" y1="270" x2="460" y2="270" stroke="#B4B2A9" stroke-width="0.5"/>
+
+<line x1="120" y1="110" x2="450" y2="110" stroke="#D85A30" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M120 110 C190 114, 230 195, 310 225 S 400 250, 450 254" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round"/>
+
+<line x1="415" y1="110" x2="415" y2="250" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
+<text x="400" y="175" text-anchor="end" font-size="16" fill="#73726C">这段差额 = 攒下的资产</text>
+
+<text x="470" y="110" dominant-baseline="central" font-size="18" font-weight="500" fill="#993C1D">劳务型</text>
+<text x="470" y="134" dominant-baseline="central" font-size="16" fill="#993C1D">每单重新付全价</text>
+
+<text x="470" y="248" dominant-baseline="central" font-size="18" font-weight="500" fill="#085041">资产型</text>
+<text x="470" y="272" dominant-baseline="central" font-size="16" fill="#0F6E56">第 10 单几乎不用付</text>
+
+<text x="120" y="296" text-anchor="middle" font-size="16" fill="#73726C">第 1 单</text>
+<text x="450" y="296" text-anchor="middle" font-size="16" fill="#73726C">第 10 单</text>
+</svg>

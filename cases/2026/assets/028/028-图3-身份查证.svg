@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="450" viewBox="0 0 680 450" font-family="'Microsoft YaHei','PingFang SC','Source Han Sans SC','Noto Sans CJK SC',sans-serif">
+<rect x="0" y="0" width="680" height="450" fill="#FFFFFF"/>
+
+<rect x="40" y="40" width="290" height="290" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="185" y="76" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#085041">身份查得到</text>
+<text x="185" y="104" text-anchor="middle" dominant-baseline="central" font-size="16" fill="#0F6E56">有公开注册信息可核</text>
+<text x="66" y="150" dominant-baseline="central" font-size="16" fill="#0F6E56">执业医师</text>
+<text x="66" y="186" dominant-baseline="central" font-size="16" fill="#0F6E56">律师（执业证号）</text>
+<text x="66" y="222" dominant-baseline="central" font-size="16" fill="#0F6E56">注册会计师、执业药师</text>
+<text x="66" y="258" dominant-baseline="central" font-size="16" fill="#0F6E56">注册建筑师、教师</text>
+<text x="66" y="302" dominant-baseline="central" font-size="16" font-weight="500" fill="#085041">核一次，进你的网络</text>
+
+<rect x="350" y="40" width="290" height="290" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="495" y="76" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#444441">身份查不到</text>
+<text x="495" y="104" text-anchor="middle" dominant-baseline="central" font-size="16" fill="#5F5E5A">只能靠人情和自述</text>
+<text x="376" y="150" dominant-baseline="central" font-size="16" fill="#5F5E5A">外卖骑手</text>
+<text x="376" y="186" dominant-baseline="central" font-size="16" fill="#5F5E5A">个体店主</text>
+<text x="376" y="222" dominant-baseline="central" font-size="16" fill="#5F5E5A">宠物殡葬师</text>
+<text x="376" y="258" dominant-baseline="central" font-size="16" fill="#5F5E5A">微商、自由撰稿人</text>
+<text x="376" y="302" dominant-baseline="central" font-size="16" font-weight="500" fill="#444441">每一单都要重新找</text>
+
+<rect x="40" y="360" width="600" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="388" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#085041">可复用的受访者资产，只可能长在左边这一栏</text>
+</svg>
