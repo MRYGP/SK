@@ -31,7 +31,7 @@
 
 待杨确认：
 
-1. B 第一月本来要做 SK Workbench（见 `ops/_temp-people/三人分工-当前版.md`），MVP 启动后 B 是同时做工作台、还是先全力 MVP？
+1. B 第一月本来要做 SK Workbench（当时分工文件已于 2026-08-25 从工作区删除，历史见 Git），MVP 启动后 B 是同时做工作台、还是先全力 MVP？
 2. 如果两条线并行 → 必须明确每周时间分配（如 SK Workbench 60% / MVP 40%），且明确"哪条线让位"的触发条件。
 3. 如果先 MVP → SK Workbench 推迟，A/B 两人都进入 MVP 执行，工具链用现成 GPTS+Claude Code 凑合。
 

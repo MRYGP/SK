@@ -28,8 +28,8 @@
 
 ## 第零层（L1）· 自动雷达引擎：四入口
 
-> ⚠️ **当前状态**：自动化管线尚未启动（见 `meta/产品雷达-自动化方案.md`、`ops/执行状态总表.md`）。  
-> L1 四个入口目前仍由实习生 A/B **手动扫描**（或 Studio 粘贴 URL）；下表「机器订阅」列为 **待接入** 的目标形态，避免误以为已有脚本在跑、可不再盯 PH。
+> ⚠️ **当前状态**：自动化管线尚未启动；历史自动化方案已于 2026-08-25 从工作区删除，由 Git 保留。
+> L1 四个入口当前仅作手动/按需扫描参考；下表「机器订阅」列为 **待接入** 的目标形态，避免误以为已有脚本在跑、可不再盯 PH。
 
 > 主口径：**Product Hunt AI**、**Product Hunt Developer Tools**、**HN Launches** 为主；**HN Show** 为补充观察源（社区作品多、噪声更大）。
 
@@ -40,7 +40,7 @@
 | HN Launches（Launch HN） | https://news.ycombinator.com/launches | https://hnrss.org/launches | **主源** |
 | HN Show（Show HN） | https://news.ycombinator.com/show | https://hnrss.org/show | **补充观察** |
 
-**说明**：HN 两行 RSS 来自 [hnrss.org](https://hnrss.github.io/) 公开文档；刷新频率请保守，避免给聚合服务过大压力。Product Hunt 的机器路径见设计稿 `meta/产品雷达-自动化方案.md`。初筛口径统一用 `radar/产品雷达-AI-Studio扫描指令.md` **v1.3**（含 AI 硬过滤 + Q3「痛点够硬」）。
+**说明**：HN 两行 RSS 来自 [hnrss.org](https://hnrss.github.io/) 公开文档；刷新频率请保守，避免给聚合服务过大压力。Product Hunt 的机器路径须在启用前重新核验。初筛口径统一用 `radar/产品雷达-AI-Studio扫描指令.md` **v1.3**（含 AI 硬过滤 + Q3「痛点够硬」）。
 
 ---
 
