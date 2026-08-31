@@ -55,6 +55,9 @@ growth_signal: "增长数据（如：3个月10x）"
 core_tech: "用了什么AI技术（GPT/自训练/RAG/Agent/多模态）"
 moat_type: "数据壁垒 / 网络效应 / 切换成本 / 品牌 / 无明显壁垒"
 acquisition_channel: "获客方式（SEO/社交裂变/社区/销售/合作伙伴）"
+winning_pillars: ["洞察", "分发"]  # 可多选：洞察/供给/分发/时机；证据不足只填「不可归因」
+winning_pillars_evidence: "对应深度底稿第8章证据账本的具体条目"
+winning_pillars_confidence: "高 / 中 / 低"
 
 # ========== RRF判断 ==========
 redefine: "它重新定义了什么问题？（一句话，没有就写'无'）"
@@ -84,6 +87,10 @@ relevance_to_us: "跟我们（老年AI/活书/DCC2026）的关系"
 # ========== 洞察与规律 ==========
 counterintuitive: "这个案例最反直觉的一点（一句话）"
 transferable_pattern: "可迁移到其他案例的规律（一句话）"
+pattern_status: "已验证模式 / 候选假设 / Ø"
+pattern_evidence: "来源章节 + 第8章证据账本条目 + 证据等级"
+pattern_gap_reason: "无 / 材料不足 / 本案例确无跨场景规律"
+pattern_followup: "材料不足时必填：待补什么、由谁补、何时复查；其余写无"
 theory_match: "匹配的理论（DOC编号+理论名）"
 comparable_cases: ["CASE-XXX", "CASE-YYY"]  # 最相似的其他案例
 
@@ -118,6 +125,16 @@ last_updated: "YYYY-MM-DD"
 - 统计 `failure_modes` 频率 → 排名前3的死因
 - 对比 `flywheel == "真飞轮"` vs `flywheel == "无飞轮"` 的存活率
 - `counterintuitive` 字段聚类 → 反直觉洞察能不能归类成几种模式？
+
+### 框架引用硬规则
+
+- 引用任何历史框架时，必须同时读取并显示 `pattern_status`
+- 历史卡没有 `pattern_status` 时，默认按「候选假设」使用，直到完成证据复核并补标；框架已有名称、P编号或曾被写入模式库，不等于已验证
+- `已验证模式`：可作为已有证据支持的模式使用，但跨行业迁移仍须重新验证
+- `候选假设`：只能作为追问或验证假设，不得直接作为判断结论
+- `Ø`：不得作为框架引用；只能说明知识缺口。若 `pattern_gap_reason` 为「材料不足」，必须同时带出 `pattern_followup`
+- 新卡只使用规范字段 `transferable_pattern`；读取历史卡时兼容旧拼法 `transferrable_pattern`，但不得继续写入旧拼法
+- 本规则只约束新写和新引用；历史案例卡不在本轮批量回填
 
 ---
 
@@ -207,6 +224,10 @@ relevance_to_us: "参考案例，小团队做大产品的路径标杆"
 
 counterintuitive: "不融资也能做到$100M ARR"
 transferable_pattern: "极小团队+极高人效=不需要大量融资"
+pattern_status: "候选假设"
+pattern_evidence: "深度底稿第六维结果与归因；B级公开报道"
+pattern_gap_reason: "无"
+pattern_followup: "补同类极小团队高ARR反例后再判断跨案例适用性"
 theory_match: "DOC-S037-从0到1（秘密理论）"
 comparable_cases: ["CASE-002-Gamma"]
 
