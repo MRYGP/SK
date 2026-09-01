@@ -1,6 +1,7 @@
 # 案例卡格式 · 用于跨案例找规律
 
-> 版本：v1.0
+> 版本：v1.0.1（2026-09-01 补丁；主结构仍为 v1.0）
+> v1.0→v1.0.1变更：新增 `winning_pillars` / `winning_pillars_evidence` / `winning_pillars_confidence` 与 `pattern_status` / `pattern_evidence` / `pattern_gap_reason` / `pattern_followup` 字段，并增加历史框架引用状态规则。文件名暂保留 `v1.0` 作为兼容路径，当前版本以文头为准。来源：2026-08-31 跨窗口模板假阳性核查。
 > 用途：每个案例拆解完后，额外提取一张"案例卡"，字段固定，方便跨案例检索和规律发现
 > 与现有模板的关系：aichajie-案例模板是"深度版"（写文章用），本格式是"结构化版"（找规律用）
 > 存储位置：所有案例卡集中存在一个文件里 → `cases/2026/case-cards.md`
